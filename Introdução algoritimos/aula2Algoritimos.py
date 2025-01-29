@@ -10,3 +10,26 @@ print ('Olá ' + 'Mundo!')
 
 # concatenando numeros e frases
 print('O resultado da soma de 2+3 é:', 2+3)
+
+# Variavel, dados e seu tipos 
+
+# Atribuição 
+
+nota = 8.5 
+disciplina = "Logica de programação e algoritimos"
+print (nota)
+print(disciplina)
+
+print('Sua pontuação na disciplina de',disciplina, 'foi',nota)
+# variavel logicas e booleanas
+a = 1
+b = 5
+resposta = a == b
+print(resposta)
+resposta = a != b
+print(resposta)
+print( 'if620')
+
+# Indice 
+frase = 'hello world'
+print(frase[6])
