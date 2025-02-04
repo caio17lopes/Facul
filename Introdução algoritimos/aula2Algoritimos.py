@@ -31,5 +31,17 @@ print(resposta)
 print( 'if620')
 
 # Indice 
-frase = 'hello world'
+frase = 'hello world!'
 print(frase[6])
+
+#Manipulação de strings
+
+s1 = 'Lógica de Programção'
+s1 = s1 + ' e Algortimos'
+print(s1)
+
+s2 = 'A' + '-' * 10 + 'B'
+print(s2)
+
+s3 = 'A' + ' ' * 10 + 'B'
+print(s3)
