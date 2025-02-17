@@ -1,5 +1,6 @@
 """
-Python                        / Operação
+OPERADORES ARITIMÉTICOS
+Python      / Operação
 
 +           / adição
 -           / subtração
@@ -8,6 +9,21 @@ Python                        / Operação
 //          / divisão somente a parte inteira 
 %           / modulos, resto da divisão 
 **          / exponenciação ou potenciação
+
+OPERADORES RELACIONAIS
+
+==          /   igualdade
+>           /   maior que
+<           /   menor que
+>=          /   maior ou igual
+<=          /   menor ou igual
+!=          /   diferente
+
+OPERADORES LOGIOCS
+
+not         /   não     /   negação
+and         /   e       /   conjunção       
+or          /   or      /   disjunção
 
 
 """
