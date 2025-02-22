@@ -14,6 +14,7 @@ Craido no programa principal
 Variáveis globais pertecem a um escopo global e são variaveis criadas dentro do programa principal.
 Uma variável global existe também em todas funções invicadas ao longo do programa
 '''
+ovos = 0 # ignorar essa variável, esta aqui apenas para tirar o erro
 def omelete ():
     ovos = 12 # variável local
 #Program principal
@@ -47,3 +48,36 @@ def bacons ():
 ovos = 2
 bacon()
 print('Ovos = ', ovos)
+# Instrução global
+'''
+Força o nosso programa a não criar uma variável local de mesmo nome e manipular somente a global dentro de uma função
+'''
+def omelete():
+    global ovos 
+    ovos = 6
+ovos = 12
+omelete()
+print(ovos)
+
+##################################################
+def omelete():
+    global ovos 
+    ovos = 6
+    bacon()
+def bacon():
+    ovos = 12 # Essa variavel do bacon não tme poder de altera o valor de ovos porque nao tem a instrução Global para alterar o valor de ovos vai ser sempre 6
+    pimenta()
+def pimenta():
+    print(ovos)
+# Programa principal
+ovos = 4
+omelete()
+print(ovos)
+
+########################################
+def omelete():
+    print(ovos)# Vai dar erro pq o print esta antes da variável o programa ainda não conhece a variável local ovos  
+    ovos = 6
+    
+ovos = 12
+omelete()
