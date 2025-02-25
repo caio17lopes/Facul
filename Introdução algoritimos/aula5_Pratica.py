@@ -1,3 +1,38 @@
+# Docstring
+'''
+Strings inserids entro de nosso codigo python que explicam o funcionamento dele
+A string é colocada na primeira linha de cadad definição
+Isso já é o que eu ja faço
+'''
+#Exercicio 1
+
+def soma3 ( x = 0, y = 0, z =0):
+    
+    '''
+    So escrevendo qualquer coisa para aparecer no print
+
+    '''
+    return  x + y + z
+print(soma3(1,2,3))
+help(soma3)
+
+#Exercicio 2
+def fatorial (num):
+
+    fat = 1
+    if num == 0:
+        return fat
+    # esta parte só executa caso num > 0 
+    for i in range (1, num + 1,1):
+        fat *= i
+    return fat 
+
+x = int(input('Digite um valor para calcular a fatorial: '))
+print(f'{x}! = {fatorial(x)}')
+
+
+# Exercicio 3 crie uma função para cada item 
+
 def valida_int(pergunta, min, max):
     while True:
         try:
@@ -77,4 +112,3 @@ while True:
     elif (op == 3):
         print('Encerrando o programa.....')
         break
-        
