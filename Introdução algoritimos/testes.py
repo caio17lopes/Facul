@@ -1,80 +1,78 @@
-def valida_int(pergunta, min, max):
+def borda (texto):
+    tam = len(texto)
+    
+    if tam:
+        print('+','-' * (tam ),'+')
+        print('|',texto,'|')
+        print('+','-' * (tam ),'+')
+
+def menu ():
+    
     while True:
         try:
-            x = int(input(pergunta))
-            if min <= x <= max:
-                return x
+            print('')
+            print('Escolha uma das opções a seguir de pratos:\n')
+            print('1 - Menu 1')
+            print('2 - Menu 2')
+            print('3 - Menu 3')
+            print('4 - Sair')
+            
+            
+            op = int(input('Digite a opção para ver as opções de menu: '))
+            if op == 1:
+                borda ('Menu 1 escolhido')
+                menu1(1,)
+            elif op == 2:
+                borda ('Menu 2 escolhido')
+                menu2(1)
+            elif op == 3:
+                borda ('Menu 3 escolhido')
+                menu3(1)
+            elif op == 4:
+                print('Encerrando o menu...')
+                
+                break
             else:
-                print(f"Erro: Digite um número entre {min} e {max}.")
+                print(f'Digite um da opções a cima:')
         except ValueError:
-            print("Erro: Digite um número inteiro válido.")
+            print('Opção invalida, tente novamente por favor.')
 
+def menu1 (card,valor):
+    print('Opção 1 -')
+    print('Entrada = Gravelax de salmão na brusqueta com azeite de trufa')
+    print('Prato Principal = Terrine de Salmão com caviar e trufa ')
+    print('Sobremesa = Sorbe de acerola com morango, com uma deliciosa calda de chocolate')
+    print('-'*45)
+    valor = 145.00
+    valor1 = int(valor)
+    return valor1, card
 
-def existeArquivo(nomeArquivo):
-    try:
-        a = open(nomeArquivo, 'rt')
-        a.close()
-    except FileNotFoundError:
-        return False
-    else:
-        return True
-    
-def criarArquivo(nomeArquivo):
-    try:
-        a = open(nomeArquivo, 'wt+')
-        a.close()
-    except:
-        print('Erro na criação do arquivo')
-    else:
-        print(f'Arquivo {nomeArquivo} criado com sucesso')
+def menu2 (valor2):
+    print('Opção 2 -')
+    print('Entrada = Carpacio de contra filé')
+    print('Prato Principal = Filé ao molho poavire e fritas ')
+    print('Sobremesa = Parfait de chocolate e morango')
+    print('-'*45)
+    valor = 105.00
+    valor2 = int(valor)
+    return valor2
 
-def cadastrarJogo(nomeArquivo, nomeJogo, nomeVideogame):
-    try:
-        a = open(nomeArquivo, 'at')
-    except:
-        print('Erro ao abrir o arquivo....')
-    else:
-        a.write(f'{nomeJogo};{nomeVideogame}\n')
-    finally:
-        a.close()
+def menu3 (valor3):
+    print('Opção 3 -')
+    print('Entrada = Aneis de lula')
+    print('Prato Principal = Panelada dos marés')
+    print('Sobremesa = Salada de fruta dos reis')
+    print('-'*45)
+    valor = 119.00
+    valor3 = int(valor)
+    return valor3
 
-def listarArquivo(nomeArquivo):
-    try:
-        a = open(nomeArquivo, 'rt')
-    except:
-        print('Erro ao ler o arquivo...')
-    else:
-        print(a.read())
-    finally:
-        a.close()
-# Programa principal
+#def quantidade (qtd):
+ #   while True:
+
+borda('Bem vindo ao restaurante MasterChef!')
+menu()
 
 
 
-arquivo = 'games.txt'
-if existeArquivo(arquivo):
-    print('Arquivo localizado no computador')
-
-else:
-    print('Arquivo inexistente')
-    criarArquivo(arquivo)
-
-while True:
-    print('Menu')
-    print('1 - Cadastrar novo item')
-    print('2 - Listar cadastros')
-    print('3 - sair')
-
-    op = valida_int ('Escolha a opção desejada: ',1,3)
-    if (op == 1):
-        print('Opção de cadastrar novo item selecionada...')
-        nomeJogo = input('Nome do jogo: ')
-        nomeVideogame = input('Nome do videogame: ')
-        cadastrarJogo(arquivo,nomeJogo,nomeVideogame)
-    elif (op == 2):
-        print('Opção listar selecionada...')
-        listarArquivo(arquivo)
-    elif (op == 3):
-        print('Encerrando o programa.....')
-        break
-        
+# Preciso coloca valores nos pratos, bebidas e quantidade consumida para dar o valor total ao cliente
