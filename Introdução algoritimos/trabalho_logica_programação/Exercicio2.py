@@ -15,7 +15,7 @@ def borda (s1):
         print('+','-' * tam,'+')
 
 def menu():
-    borda('Bem vindo ao Sabores do Norte!')
+    borda('Bem vindo a Sorveteria Caio Lopes!')
     borda('''Tamanhos    Cupuaçu       Açai
     P    |    R$ 9.00   |   R$ 11.00
     M    |    R$ 14.00  |   R$ 16.00
@@ -30,14 +30,14 @@ def valor ():
     while True:
         produto = input('Digite "CP" para Cupuaçu ou "AC" para Açai: ').upper()
         if produto != 'CP' and produto != 'AC':
-            print('Digite um sabor valdo, "CP" para Cupuaçu ou "CA" para Açai')
+            print('Digite um sabor valido! "CP" para Cupuaçu ou "CA" para Açai')
             continue # volta para o inicio do loop ate a pessoa preeencher o valor de forma correta
         tamanho = input('Digite o tamnho desejado, "P" para pequeno, "M" para medio ou "G" para grande:  ').upper()
         if tamanho != 'P' and tamanho != 'M' and tamanho != 'G':
-            print('Digite um tamnho valido. P para pequeno, "M" para medio ou "G" para grande:')
+            print('Digite um tamanho valido! "P" para pequeno, "M" para medio ou "G" para grande')
             continue # volta para o inicio do loop ate a pessoa preeencher o valor de forma correta
         total += precos[produto][tamanho] # ele acumula o valor do pedido pelo tamanho e o valor seguindo o dicionario
-        sair = input('Se deseja fazer mais algum pedido, digite "S" para fazer mais pedidos ou "N" para encerrar: ').title()
+        sair = input('Você deseja fazer mais algum pedido? Digite "S" para fazer mais pedidos ou "N" para encerrar: ').upper()
         if sair == 'N':
             break # encerra todo o loop 
         else:
@@ -51,4 +51,4 @@ def valor ():
 menu()
 
 preco = valor() # preco recebe o resultado da função valor 
-borda(f'O valor a ser pago é R$ {preco:.2f}')
+borda(f'O valor a ser pago é R$ {preco:.2f}') # entrega o valor final para o cliente
