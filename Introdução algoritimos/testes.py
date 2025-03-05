@@ -16,3 +16,5 @@ def velhice(nome,idade):
 seu_nome = input('digite seu nome: ')
 idade = int(input('Digite sua idade: '))
 velhice (seu_nome,idade)
+
+

@@ -1,29 +1,54 @@
-def calcular_pagamento(qtd_horas, valor_hora):
-    horas = float(qtd_horas)
-    taxa = float(valor_hora)
-    if horas <= 40:
-        salario=horas*taxa
-    else:
-        h_excd = horas - 40
-        salario = 40*taxa+(h_excd*(1.5*taxa))
-    return salario
+'''
+Enunciado: Você e sua equipe de programadores foram contratados para desenvolver um app de vendas para uma loja que vende Açaí e Cupuaçu. 
+Você ficou com a parte de desenvolver a interface do cliente para retirada do produto.
+A Loja possui seguinte relação:
 
-str_horas= input('Digite as horas: ')
-str_taxa=input('Digite a taxa: ')
-total_salario = calcular_pagamento(str_horas,str_taxa)
-print('O valor de seus rendimentos é R$',total_salario)
+•	Tamanho P de Cupuaçu (CP) custa 9 reais e o Açaí (AC) custa 11 reais;
+•	Tamanho M de Cupuaçu (CP) custa 14 reais e o Açaí (AC) custa 16 reais;
+•	Tamanho G de Cupuaçu (CP) custa 18 reais e o Açaí (AC) custa 20 reais;
+'''
+def borda (s1):
+    tam = len(s1)# só imprime caso exista algum caractere
+    if tam:
+        print('+','-' * tam,'+')
+        print('|',s1,'|')
+        print('+','-' * tam,'+')
 
-def velhice(nome,idade):
-    nomes = str(nome)
-    anos = int(idade)
-    if anos <= 35:
-        print(f'Você é jovem {anos}')
-    elif anos >= 36 or anos <= 59:
-        print(f'Você é um coroa {anos}')
-    else:
-        print(f'Você é idoso {anos}')
-    return nomes,anos
+def menu():
+    borda('Bem vindo ao Sabores do Norte!')
+    borda('''Tamanhos    Cupuaçu       Açai
+    P    |    R$ 9.00   |   R$ 11.00
+    M    |    R$ 14.00  |   R$ 16.00
+    G    |    R$ 18.00  |   R$ 20.00 
+''')
+def valor ():
+    precos = {
+        'CP': {'P':9, 'M':14, 'G':18},
+        'AC':{'P':11, 'M':16, 'G':20}
+    }
+    total = 0 # soma a quantidade de pedidos
+    while True:
+        produto = input('Digite "CP" para Cupuaçu ou "AC" para Açai: ').upper()
+        if produto != 'CP' and produto != 'AC':
+            print('Digite um sabor valdo, "CP" para Cupuaçu ou "CA" para Açai')
+            continue # volta para o inicio do loop ate a pessoa preeencher o valor de forma correta
+        tamanho = input('Digite o tamnho desejado, "P" para pequeno, "M" para medio ou "G" para grande:  ').upper()
+        if tamanho != 'P' and tamanho != 'M' and tamanho != 'G':
+            print('Digite um tamnho valido. P para pequeno, "M" para medio ou "G" para grande:')
+            continue # volta para o inicio do loop ate a pessoa preeencher o valor de forma correta
+        total += precos[produto][tamanho] # ele acumula o valor do pedido pelo tamanho e o valor seguindo o dicionario
+        sair = input('Se deseja fazer mais algum pedido, digite "S" para fazer mais pedidos ou "N" para encerrar: ').title()
+        if sair == 'N':
+            break # encerra todo o loop 
+        else:
+            continue # volta no inicio do loop caso o cliente queira fazer mais um pedido
+    return total # retorna o valor da operação
 
-seu_nome = input('digite seu nome: ')
-idade = int(input('Digite sua idade'))
-print('Seu nome é: ', velhice(seu_nome), 'e sua idade é: ', velhice(idade) )
+
+
+
+
+menu()
+
+preco = valor() # preco recebe o resultado da função valor 
+borda(f'O valor a ser pago é R$ {preco:.2f}')
