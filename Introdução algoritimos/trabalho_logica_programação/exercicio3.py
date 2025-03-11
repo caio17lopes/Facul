@@ -22,3 +22,43 @@ O valor final da conta é calculado da seguinte maneira:
 total = (servico * num_pagina) + extra
 
 '''
+def borda (s1):
+    tam = len(s1)# só imprime caso exista algum caractere
+    if tam:
+        print('+','-' * tam,'+')
+        print('|',s1,'|')
+        print('+','-' * tam,'+')
+
+def escolha_serviço():
+    opcao_valida = {'DIG','ICO','IPB','FOT'}
+    while True:
+        print('Selecione o serviço desejado:')
+        print('  DIG - Digitalização → R$ 1.10 por página')
+        print('  ICO - Impressão colorida → R$ 1.00 por página')
+        print('  IPB - Impressão preta e branca → R$ 0.40 por página')
+        print('  FOT - Fotocópia → R$ 0.20 por página')
+        escolha = input(str("Digite a opção desejada: ").strip().upper())
+        if escolha in opcao_valida:
+            return escolha
+        else:
+            print('⚠ Opação invalida! Tente novamente...')
+
+def
+
+
+
+borda('Bem vindo a Copy do Caio Lopes!!!')
+escolha_serviço()
+while True:
+            try:
+                folha = int(input('Digite a quantidade de folhas que deseja: '))
+                break
+            except ValueError:
+                print('Opção invalida, informe apenas números')
+        
+        precos = {
+            'DIG':{1.10},
+            'ICO':{1.00},
+            'IPB':{0.40},
+            'FOT':{0.20}
+            }

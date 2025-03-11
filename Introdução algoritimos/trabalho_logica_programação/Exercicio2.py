@@ -44,10 +44,7 @@ def valor ():
             continue # volta no inicio do loop caso o cliente queira fazer mais um pedido
     return total # retorna o valor da operação
 
-
-
-
-
+#Programa principal
 menu()
 
 preco = valor() # preco recebe o resultado da função valor 
