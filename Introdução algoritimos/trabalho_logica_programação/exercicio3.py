@@ -31,34 +31,106 @@ def borda (s1):
 
 def escolha_serviço():
     opcao_valida = {'DIG','ICO','IPB','FOT'}
+    preco = {
+    'DIG':1.10,
+    'ICO':1.00,
+    'IPB':0.40,
+    'FOT':0.20
+    }
     while True:
-        print('Selecione o serviço desejado:')
-        print('  DIG - Digitalização → R$ 1.10 por página')
-        print('  ICO - Impressão colorida → R$ 1.00 por página')
-        print('  IPB - Impressão preta e branca → R$ 0.40 por página')
-        print('  FOT - Fotocópia → R$ 0.20 por página')
-        escolha = input(str("Digite a opção desejada: ").strip().upper())
+        print('Selecione o serviço desejado: ')
+        print('DIG - Digitalização → R$ 1.10 por página')
+        print('ICO - Impressão colorida → R$ 1.00 por página')
+        print('IPB - Impressão preta e branca → R$ 0.40 por página')
+        print('FOT - Fotocópia → R$ 0.20 por página')
+        print('Para encerrar digite sair')
+        escolha = input("Digite a opção desejada: ").strip().upper()
         if escolha in opcao_valida:
-            return escolha
+            return escolha, preco[escolha]
+        elif escolha == 'SAIR':
+            print('Encerrando')
+            break
+        
         else:
-            print('⚠ Opação invalida! Tente novamente...')
-
-def
+            print('⚠ Opção invalida! Tente novamente...')
 
 
+def num_pagina():
+    
+    while True:
+        try:
+            qtd_pagina = int(input('Informe a quantidade de páginas que deseja para realizar o serviço: '))
+            return qtd_pagina
+        except ValueError:
+            print('⚠ Opção invalida. Informe em numeral a quantidade de paginas que deseja!')
+
+def serviço_extra():
+    print('Oferecemos serviços de encadernação:')
+    extra = {
+        'caderno_S': 15.00,
+        'caderno_D': 40.00
+    }
+    while True:
+        print('Encadernação capa simples : 15.00')
+        print('Encadernação capa dura : 40.00')
+        print('1 -Para encadernação capa simples ')
+        print('2 - Para encadernação capa dura')
+        print('0 - Sair')
+        escolha = input('Digite a opção desejada: ')
+
+        if escolha == '1':
+            print(f'Serviço de encadernação simples selecionado: R$ {extra['caderno_S']}')
+            return extra['caderno_S']
+        elif escolha == '2':
+            print(f'Serviço de encadernação capa dura selecionado: R$ {extra['caderno_D']}')
+            return extra['caderno_D']
+        elif escolha == '0':
+            print('Nenhum serviço selecionado')
+            return 0
+        else:
+            print('⚠ Opção inválida! Tente novamente.')
+            continue
+
+def descontos (preco, pagina):
+
+    total = preco * pagina
+    
+    paginas = num_pagina()
+    desconto = 0
+    if paginas <= 20:
+        print(f'Seu pedido foi de {paginas}, seu desconto de R$ {desconto} ')
+    elif  20 < paginas < 200:
+        desconto = total * 0.15
+        print(f'Seu pedido foi de {paginas},  seu desconto de R$ {desconto} ')
+        
+    elif 200 < paginas < 2000:
+        desconto = total * 0.20
+        print(f'Seu pedido foi de {paginas},  seu desconto de R$ {desconto} ')
+    elif 200 < paginas < 20000:
+        desconto = total * 0.25
+        print(f'Seu pedido foi de {paginas},  seu desconto de R$ {desconto} ')
+    else:
+        print('Não aceitamos pedidos maiores que 20000 páginas')
+    return desconto 
+
+
+
+#Programa Principal
+qtd_serviço = 0
+qtd_preco = 0
 
 borda('Bem vindo a Copy do Caio Lopes!!!')
-escolha_serviço()
 while True:
-            try:
-                folha = int(input('Digite a quantidade de folhas que deseja: '))
-                break
-            except ValueError:
-                print('Opção invalida, informe apenas números')
-        
-        precos = {
-            'DIG':{1.10},
-            'ICO':{1.00},
-            'IPB':{0.40},
-            'FOT':{0.20}
-            }
+    escolha_serviço()
+    servico, qtd_preco = escolha_serviço()
+    num_pagina()
+    extra = serviço_extra()
+    qtd_pagina = num_pagina()
+    valor = (qtd_preco * qtd_pagina) + extra 
+    qtd_serviço += 1 
+    qtd_preco   += 1
+    escolha = input('Se deseja mais um serviço digite S ou N para finalaizar')
+    if escolha == 'S':
+        continue
+    else: 
+        print(f'Serviço pedido: {servico}. Quantidades de copias pedidas: {qtd_pagina}. Serviço extra {extra}. Valor total R$ {valor}  ')
