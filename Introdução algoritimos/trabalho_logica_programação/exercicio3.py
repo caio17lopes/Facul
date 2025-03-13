@@ -53,7 +53,7 @@ def escolha_serviço():
         
         else:
             print('⚠ Opção invalida! Tente novamente...')
-
+        print('\n')
 
 def num_pagina():
     
@@ -65,7 +65,7 @@ def num_pagina():
             print('⚠ Opção invalida. Informe em numeral a quantidade de paginas que deseja!')
 
 def serviço_extra():
-    print('Oferecemos serviços de encadernação:')
+    borda('Oferecemos serviços de encadernação:')
     extra = {
         'caderno_S': 15.00,
         'caderno_D': 40.00
@@ -79,40 +79,48 @@ def serviço_extra():
         escolha = input('Digite a opção desejada: ')
 
         if escolha == '1':
-            print(f'Serviço de encadernação simples selecionado: R$ {extra['caderno_S']}')
+            print(f'Serviço de encadernação simples selecionado: R$ {extra["caderno_S"]}')
+            print('\n')
             return extra['caderno_S']
+            
         elif escolha == '2':
-            print(f'Serviço de encadernação capa dura selecionado: R$ {extra['caderno_D']}')
+            print(f'Serviço de encadernação capa dura selecionado: R$ {extra["caderno_D"]}')
+            print('\n')
             return extra['caderno_D']
         elif escolha == '0':
             print('Nenhum serviço selecionado')
-            return None,0
+            return 0
         else:
             print('⚠ Opção inválida! Tente novamente.')
+            print('\n')
             continue
+        
 
 def descontos (preco, pagina):
 
-    total = preco * pagina
+    while pagina > 20000:
+        print('Não aceitamos pedidos maiores que 20000 páginas, faça o pedido novamente.')   
+        pagina = num_pagina()
     
-    paginas = num_pagina()
+    total = preco * pagina
     desconto = 0
-    if paginas <= 20:
-        print(f'Seu pedido foi de {paginas}, seu desconto de R$ {desconto} ')
-    elif  20 < paginas < 200:
+    
+    if pagina <= 20:
+        print(f'Seu pedido foi de {pagina}, seu desconto foi de R$ {desconto} ')
+    elif  20 < pagina < 200:
         desconto = total * 0.15
-        print(f'Seu pedido foi de {paginas},  seu desconto de R$ {desconto} ')
-        
-    elif 200 < paginas < 2000:
+        print(f'Seu pedido foi de {pagina},  seu desconto foi de R$ {desconto} ')
+        print('\n')
+    elif 200 < pagina < 2000:
         desconto = total * 0.20
-        print(f'Seu pedido foi de {paginas},  seu desconto de R$ {desconto} ')
-    elif 200 < paginas < 20000:
+        print(f'Seu pedido foi de {pagina},  seu desconto foi de R$ {desconto} ')
+        print('\n')
+    elif 2000 < pagina < 20000:
         desconto = total * 0.25
-        print(f'Seu pedido foi de {paginas},  seu desconto de R$ {desconto} ')
-    else:
-        print('Não aceitamos pedidos maiores que 20000 páginas')
+        print(f'Seu pedido foi de {pagina},  seu desconto foi de R$ {desconto} ')
+        print('\n')
     return desconto 
-
+    
 
 
 #Programa Principal
@@ -129,11 +137,12 @@ while True:
     
     valor = (qtd_preco * qtd_pagina) + extra 
     desconto = descontos(qtd_preco, qtd_pagina)
-    valor_final = desconto - valor
+    valor_final = valor - desconto
 
     qtd_serviço += 1 
     qtd_preco   += valor
-    escolha = input('Se deseja mais um serviço digite S ou N para finalaizar')
+    escolha = input('Se deseja mais um serviço digite S ou N para finalizar: ')
     if escolha != 'S':
-        print(f'Serviço pedido: {servico}. Quantidades de copias pedidas: {qtd_pagina}. Serviço extra {extra}. Valor total R$ {valor_final}  ')
+        borda(f'Serviço pedido: {servico} . Quantidades de copias pedidas: {qtd_pagina} . Serviço extra {extra} . Valor total R$ {valor_final:.2f}  ')
         break
+print('A Copy Caio Lopes agradece pelo seu pedido')
