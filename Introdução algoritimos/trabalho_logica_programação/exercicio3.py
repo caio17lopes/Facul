@@ -48,8 +48,8 @@ def escolha_serviço():
         if escolha in opcao_valida:
             return escolha, preco[escolha]
         elif escolha == 'SAIR':
-            print('Encerrando')
-            break
+            print('Encerrando...')
+            return None,0
         
         else:
             print('⚠ Opção invalida! Tente novamente...')
@@ -86,7 +86,7 @@ def serviço_extra():
             return extra['caderno_D']
         elif escolha == '0':
             print('Nenhum serviço selecionado')
-            return 0
+            return None,0
         else:
             print('⚠ Opção inválida! Tente novamente.')
             continue
@@ -121,16 +121,19 @@ qtd_preco = 0
 
 borda('Bem vindo a Copy do Caio Lopes!!!')
 while True:
-    escolha_serviço()
     servico, qtd_preco = escolha_serviço()
-    num_pagina()
-    extra = serviço_extra()
+    if servico is None:
+        break
     qtd_pagina = num_pagina()
+    extra = serviço_extra()
+    
     valor = (qtd_preco * qtd_pagina) + extra 
+    desconto = descontos(qtd_preco, qtd_pagina)
+    valor_final = desconto - valor
+
     qtd_serviço += 1 
-    qtd_preco   += 1
+    qtd_preco   += valor
     escolha = input('Se deseja mais um serviço digite S ou N para finalaizar')
-    if escolha == 'S':
-        continue
-    else: 
-        print(f'Serviço pedido: {servico}. Quantidades de copias pedidas: {qtd_pagina}. Serviço extra {extra}. Valor total R$ {valor}  ')
+    if escolha != 'S':
+        print(f'Serviço pedido: {servico}. Quantidades de copias pedidas: {qtd_pagina}. Serviço extra {extra}. Valor total R$ {valor_final}  ')
+        break
