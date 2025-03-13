@@ -29,7 +29,7 @@ def borda (s1):
         print('|',s1,'|')
         print('+','-' * tam,'+')
 
-def escolha_serviço():
+def escolha_servico(): # Função para escolha do serviço  
     opcao_valida = {'DIG','ICO','IPB','FOT'}
     preco = {
     'DIG':1.10,
@@ -43,36 +43,40 @@ def escolha_serviço():
         print('ICO - Impressão colorida → R$ 1.00 por página')
         print('IPB - Impressão preta e branca → R$ 0.40 por página')
         print('FOT - Fotocópia → R$ 0.20 por página')
-        print('Para encerrar digite sair')
+        print('Para encerrar digite S = sair')
         escolha = input("Digite a opção desejada: ").strip().upper()
         if escolha in opcao_valida:
             return escolha, preco[escolha]
-        elif escolha == 'SAIR':
+        elif escolha == 'S':
             print('Encerrando...')
-            return None,0
+            return None,0 # Retorna nada caso o cliente não deseja o serviço
         
         else:
             print('⚠ Opção invalida! Tente novamente...')
-        print('\n')
+            continue # Caso o cliente coloque algo diferente, o loop volta ao inicio fazendo o escolher novamente
+        
 
 def num_pagina():
     
     while True:
         try:
             qtd_pagina = int(input('Informe a quantidade de páginas que deseja para realizar o serviço: '))
-            return qtd_pagina
+            if qtd_pagina > 20000 :
+                print('Não realizamos serviço acima de 20000 páginas') 
+                continue # Caso o cliente coloque mais de 20000 páginas voltamos ao inicio do loop para colocar uma nova quantidade
+            return qtd_pagina # retorna o valor
         except ValueError:
             print('⚠ Opção invalida. Informe em numeral a quantidade de paginas que deseja!')
 
-def serviço_extra():
+def servico_extra():
     borda('Oferecemos serviços de encadernação:')
     extra = {
         'caderno_S': 15.00,
         'caderno_D': 40.00
     }
     while True:
-        print('Encadernação capa simples : 15.00')
-        print('Encadernação capa dura : 40.00')
+        print('Encadernação capa simples : R$15.00')
+        print('Encadernação capa dura : R$40.00')
         print('1 -Para encadernação capa simples ')
         print('2 - Para encadernação capa dura')
         print('0 - Sair')
@@ -89,60 +93,60 @@ def serviço_extra():
             return extra['caderno_D']
         elif escolha == '0':
             print('Nenhum serviço selecionado')
-            return 0
+            return 0 # Retorna nada caso o cliente não deseja o serviço extra
         else:
             print('⚠ Opção inválida! Tente novamente.')
             print('\n')
-            continue
+            continue # Retorna ao inicio do loop caso a opção seja invalida
         
 
 def descontos (preco, pagina):
-
-    while pagina > 20000:
-        print('Não aceitamos pedidos maiores que 20000 páginas, faça o pedido novamente.')   
-        pagina = num_pagina()
     
     total = preco * pagina
     desconto = 0
     
     if pagina <= 20:
-        print(f'Seu pedido foi de {pagina}, seu desconto foi de R$ {desconto} ')
+        borda(f'Seu pedido foi de {pagina} paginas, seu desconto foi de R$ {desconto} ')
     elif  20 < pagina < 200:
         desconto = total * 0.15
-        print(f'Seu pedido foi de {pagina},  seu desconto foi de R$ {desconto} ')
+        borda(f'Seu pedido foi de {pagina} paginas,  seu desconto foi de R$ {desconto} ')
         print('\n')
     elif 200 < pagina < 2000:
         desconto = total * 0.20
-        print(f'Seu pedido foi de {pagina},  seu desconto foi de R$ {desconto} ')
+        borda(f'Seu pedido foi de {pagina} paginas,  seu desconto foi de R$ {desconto} ')
         print('\n')
     elif 2000 < pagina < 20000:
         desconto = total * 0.25
-        print(f'Seu pedido foi de {pagina},  seu desconto foi de R$ {desconto} ')
+        borda(f'Seu pedido foi de {pagina} paginas,  seu desconto foi de R$ {desconto} ')
         print('\n')
-    return desconto 
+    return desconto # retorna o valor do desconto 
     
 
 
 #Programa Principal
-qtd_serviço = 0
-qtd_preco = 0
+qtd_servicos = 0
+valor_total = 0
 
-borda('Bem vindo a Copy do Caio Lopes!!!')
+borda('Bem-vindo à Copy do Caio Lopes!')
+
 while True:
-    servico, qtd_preco = escolha_serviço()
-    if servico is None:
+    servico, preco_por_pagina = escolha_servico()
+    if servico is None: # Caso o cliente digite sair o programa é encerrado 
         break
-    qtd_pagina = num_pagina()
-    extra = serviço_extra()
-    
-    valor = (qtd_preco * qtd_pagina) + extra 
-    desconto = descontos(qtd_preco, qtd_pagina)
-    valor_final = valor - desconto
 
-    qtd_serviço += 1 
-    qtd_preco   += valor
-    escolha = input('Se deseja mais um serviço digite S ou N para finalizar: ')
-    if escolha != 'S':
-        borda(f'Serviço pedido: {servico} . Quantidades de copias pedidas: {qtd_pagina} . Serviço extra {extra} . Valor total R$ {valor_final:.2f}  ')
-        break
-print('A Copy Caio Lopes agradece pelo seu pedido')
+    qtd_paginas = num_pagina() # Recebe a quantidaded de paginas que o cliente informou dentro da função
+    extra = servico_extra() # Recebe o tipo de serviço extra que o cliente informou dentro da função
+    desconto = descontos(preco_por_pagina, qtd_paginas) # Passa para dentro da função o valor do preço por pagina e a quantidade de paginas , para calcular o desconto. Depois disso é passado...
+    # o valor para dentro da variavel desconto
+    valor_servico = (preco_por_pagina * qtd_paginas) + extra - desconto # Calcula o valor final 
+    valor_total += valor_servico
+    qtd_servicos += 1 # incrementa os serviços pedidos pelo o cliente
+
+    print(f'Total deste serviço: R$ {valor_servico:.2f}')
+    
+    continuar = input('Deseja solicitar mais um serviço? (S/N): ').strip().upper()
+    if continuar != 'S':
+        break # Finalaiza o programa quando o lciente não deseja mais nenhum serviço
+
+borda(f'Total de serviços pedidos: {qtd_servicos} → Valor final: R$ {valor_total:.2f}')
+borda('A Copy Caio Lopes agradece pelo seu pedido!')
