@@ -1,0 +1,65 @@
+# Software, programas e sistemas
+    Software consiste em:
+    instruções (programas de computador) que, quando executadas, fornecem características, funções e desempenho desejados;
+    estruturas de dados que possibilitam aos programas manipular informações adequadamente;
+    informação descritiva, tanto na forma impressa quanto na virtual, descrevendo a operação e o uso dos programas.
+    Simplificando a definição anterior, podemos dizer que um software é um programa de computador e toda a documentação associada a esse programa.
+
+    Software
+        Sequência de passos ou instruções descritos por um algoritimo 
+    
+    Algoritimo 
+        Estrutura passo a passo de como im problema deve ser resolvido
+        ex: receita de bolo 
+
+    • Software de sistema (básico):
+        • sistemas operacionais;
+        • software utilitário.
+    • Software aplicativo.
+
+1.2 Software de sistema (básico)
+    Software básico consiste em uma coleção de programas para apoiar
+    outros programas. Realiza as tarefas de gerenciamento necessárias ao seu
+    funcionamento. Temos nessa categoria os sistemas operacionais e o software
+    utilitário.
+    Ex: Microsoft, Android, Linux, MacOS
+    
+Software Utilitarios
+
+    O software utilitário fornece ao usuário ferramentas para organizar os
+    discos, verificar a disponibilidade de memória e corrigir as falhas de
+    processamento. Costumamos dizer que são softwares úteis ao sistema
+    operacional, ou seja, que trabalham em função do sistema operacional.
+    São exemplos de utilitários: antivírus, compactadores, emuladores,
+    desfragmentadores, formatadores, backup.
+    Ex: Avast, AVG, Ccleaner, Winrar....
+
+1.3 Software aplicativo
+    O software aplicativo é também chamado apenas de aplicativo ou mais
+    popularmente app. Podemos dizer que é um software que realiza algum trabalho
+    para o usuário, ou seja, são programas que realizam tarefas específicas. Como
+    exemplo temos as planilhas, o editor de texto, os navegadores (browsers), o
+    editor de imagem, entre outros.
+    Ex: Word, Power Point, Excell, ADobe, Whatsapp, Google Crome, FireFox
+
+TEMA 2 – SISTEMA OPERACIONAL
+    Um sistema pode ser definido como um conjunto de partes que se
+    interagem para alcançar um determinado objetivo.
+    O que diferencia software de um sistema é que este pode ser definido
+    como um conjunto de softwares que interage para alcançar um determinado
+    objetivo ( sistemas tradutores também entram)
+    Ex: Microsoft, Android, Linux, MacOS, Visual Studio, Pycharm
+
+    Software é responsavel pela supervisão dos processos executados em um computador
+    Gerencia todo o hardware e todo software do computador e realiza a comunicação entre eles  
+    
+    Função do SO
+    Facilitar o uso do computador pel ousuario
+    Gerenciar recursos
+    Controlar as execuções da CPU
+
+    Sistemas tradutores
+    Converte programs escritos em codigo de linguagem de maquina (binaria)
+    
+    Intepretador : Seria exatamente um Visual Studio ou um pycharm ou qualquer outro intepretador similar
+    Compiolador : Vai gerar um executavel que vai ser instalado e rodado pela maquina 
