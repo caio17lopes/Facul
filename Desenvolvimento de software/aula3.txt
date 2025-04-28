@@ -1,0 +1,17 @@
+Como nasce um software
+    Nasce com o levantamento dos requisitos, como rotinas de como ele vai funcionar
+    Ex: codificação, validar, integrar, testar
+    Daily scrum:
+        Priorizar tarefas, comunicação com a equipe, foco no cliente
+        O trabalho em quipe impacta no sucesso da aplicação 
+        Uma equipe que não colabora, atrasa o projetos
+        Reuniões são importantes para acertar o que esat sendo feito
+        Excesso de reunião acaba a produtividade
+        Verificar se o assunto pede uma reunião 
+        Evitar confrontos fora do horario comercial 
+        Envie o convite com o contexto da reunião
+        Estar presente de verdades
+        Tenha cuidado com a camera e microfone
+        Faça uma ata da reunião 
+
+Ferramentas colaborativas de trabalho de equipe 

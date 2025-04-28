@@ -1,0 +1,122 @@
+Compreensão do domínio
+
+    A compreensão do domínio, também chamada de análise de domínio,é definida por Neighbors (1984) como: 
+    “Uma tentativa de identificar objetos, operações e relacionamentos, entre aqueles que o especialista percebe ser importante no domínio”.
+    
+    Processo de compreensão de domínio: 
+        1 - Aquisição de conhecimento
+        2 - Análise das informações 
+        3 - Organização de agrupamento 
+    
+    Classificação dos métodos:
+       1. Produtos de software: reutilização de código fonte, arquitetura e requisitos
+            técnicos e de negócio.
+        2. Processos de software: padronizações de projetos de software e
+            frameworks.
+        3. Tecnologia de software: ferramentas, plataformas e bibliotecas.
+        4. Experiência de software: experiências coletadas durante o
+            desenvolvimento do software.
+
+    Apesar de esse processo ser primordial para o sucesso de um projeto,
+    podemos identificar alguns problemas e dificuldades da compreensão de
+    domínio, tais como:
+        • Analisar e compreender domínios complexos e instáveis;
+        • Repassar as características do domínio real para o papel;
+        • Definir uma técnica ou abordagem que seja mais aderente ao
+            conhecimento e o integre corretamente depois que os resultados das pesquisas da Análise do Domínio sejam coletados;
+        • Fazer com que a informação esteja sempre atualizada;
+        • Realizar uma triagem correta das informações, visando sempre armazenar o que realmente possa ser útil para projetos futuros;
+        • Utilizar métodos, técnicas e ferramentas confiáveis.
+
+Coletas de requisitos 
+    É a definição e documentação dos requisitos do projeto 
+    Tecnicas para coleta de requisito:
+        • Entrevista
+        • Questionário
+        • Observação
+        • Casos de uso
+        • Prototipação 
+
+Classificação de requisitos
+    Essa atividade toma a coleção de requisitos não estruturados, agrupa requisitos relacionados e os organiza em grupos coerentes.
+    A forma mais comum de agrupar os requisitos é o uso de um modelo de arquitetura do sistema para identificar subsistemas e associar requisitos a cada subsistema. 
+    Na prática, a engenharia de requisitos e projeto da arquitetura não podem ser atividades completamente separadas.
+    
+    Requisitos funcionais (RF)
+    Os requisitos funcionais são os recursos ou componentes que o sistema
+    deve oferecer ao usuário final. Ou seja, são os requisitos vistos no produto final.
+    Podemos identificar como requisitos funcionais os seguintes itens:
+        • Cálculos;
+        • Detalhes técnicos;
+        • Manipulação de dados e de processamento;
+        • Funcionalidades específicas do que o sistema pode executar;
+        • Serviços que o sistema deverá oferecer.   
+
+    Requisitos não funcionais (RNF)
+    Os requisitos não funcionais, como o nome já diz, não visam as
+    funcionalidades e sim as propriedades, desempenho, padrões a serem seguidos
+    capacidade de manutenção, segurança e as restrições a serem seguidas no
+    desenvolvimento do software
+    Os RNF tratam de problemas como:
+        • Portabilidade;
+        • Segurança;
+        • Capacidade de manutenção;
+        • Confiabilidade;
+        • Escalabilidade;
+        • Reutilização;
+        • Flexibilidade;
+        • Velocidade.
+
+    Requisitos do produto
+    Como o produto deve se comportar em termos de eficiência,
+    confiabilidade, usabilidade e portabilidade.
+
+    Requisitos da organização
+    A quais políticas e procedimentos organizacionais o sistema deve
+    obedecer. Quais padrões devem ser atendidos.
+
+    Requisitos externos
+    Fatores externos ao sistema e ao processo de desenvolvimento, tais
+    como a legislação e ética.
+
+    Requisitos de domínio (RD)
+    Os requisitos de domínio dizem respeito ao conhecimento do processo
+    que faz parte do cotidiano do cliente, por exemplo, no sistema de gestão de uma
+    academia, os requisitos do domínio são conhecimentos particulares para esta
+    área de atuação e somente as pessoas que têm essa vivência há alguns anos
+    conseguem detalhar corretamente para o analista.
+
+Resolução de conflito e definição de prioridades    
+    Identificar a causa 
+    Comunicação aberta e eficiente 
+    Soluções rápidas
+    Relação ganha-ganha 
+    Priorizar o melhor para o projeto 
+
+    Definição de prioridades
+        A priorização dos requisitos de software repercute significativamente no
+        escopo do projeto. O desenvolvimento de um software é um processo iterativo e
+        incremental, e a seleção dos requisitos que serão implementados em cada
+        versão impacta no desempenho do projeto, podendo reduzir despesas e horas
+        de desenvolvimento e com isso amplificar a satisfação do cliente
+
+    Atribuição numérica
+    Atribuir um valor de 1 a 5 para cada um dos requisitos, a importância dos
+    requisitos aumenta à medida que o número aumenta, sendo 1 menos importante
+    e o 5 o mais importante.
+   
+    Moscow
+    Classificar os requisitos em quatro grupos de prioridades
+
+    Top 10
+    Selecionar os dez requisitos mais importantes do projeto. Indicado para
+    projetos com poucos requisitos e stakeholders.
+
+    AHP (processo hierárquico analítico)
+    Faz a decomposição do problema em níveis hierárquicos. No primeiro
+    nível estão os objetivos, no segundo os critérios, no terceiro os subcritérios e no
+    último nível as alternativas. Utilizado em projetos complexos.
+    
+    Modelo Kano
+    Considera as necessidades do cliente, quais seus desejos e como atinge
+    sua satisfação.
