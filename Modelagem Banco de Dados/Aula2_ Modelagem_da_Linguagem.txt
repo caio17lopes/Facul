@@ -1,0 +1,38 @@
+Notação para o diagrama de casos de uso 
+
+    Caso de Uso 
+        Um caso de uso pode ser definido, de forma objetiva, como uma   funcionalidade do sistema que será desenvolvido, ou seja, um requisito funcional
+        mapeado. Além disso, representa uma ou mais ações que o sistema executará. O elemento que representa o caso de uso é uma elipse contendo no seu interior
+        o nome da ação que será executada. Esse nome deve ser formado pela união de um verbo e um substantivo. Na Figura 2, note que existem dois casos de
+        uso, o primeiro chamado Realizar pedido, cujo nome é junção do verbo realizar e do substantivo pedido; o segundo, Efetuar pagamento, junção do verbo efetuar
+        e do substantivo pagamento  
+    
+    Ator   
+        O ator representa uma entidade externa que possui algum tipo de interação com o sistema, por meio de uma entrada de dados ou uma resposta
+        processada. O ator pode ser um usuário desempenhando determinado papel na execução do sistema, um dispositivo de hardware ou até mesmo outro sistema.
+        Ou seja, o ator é quem demandará a execução dos casos de uso. O elemento que representa o ator é um boneco, conhecido popularmente por boneco-palito.
+        Para identificá-lo, deve-se colocar, logo abaixo da representação, o seu nome (papel assumido pelo ator), com a primeira letra em maiúsculo. A Figura 3 mostra
+        alguns exemplos de atores.
+    
+    Associação 
+        O relacionamento entre atores e casos de uso é chamado de associação. Sua função é indicar que determinado ator utiliza ou executa uma ou mais
+        funcionalidades (casos de uso) do sistema representado no diagrama de casos de uso. O elemento que representa uma associação é uma linha sólida entre o
+        ator e o caso de uso. Como mostra a Figura 4, o ator intitulado Cliente executa os casos de uso Realizar pedido e Realizar pagamento.
+        O uso da linha sólida indica que a interação entre o ator e o caso de uso ocorre nos dois sentidos. Caso seja necessário indicar de forma explícita a
+        direção em que a interação ocorre (navegabilidade), deve-se utilizar uma linha sólida com uma seta em uma das extremidades
+        Outra propriedade que também pode ser descrita no diagrama de caso de uso é a multiplicidade (cardinalidade) existente entre os atores e os casos de
+        uso. A multiplicidade tem como objetivo apresentar de forma explícita quantos elementos estão interagindo, em uma associação. A Figura 6 mostra um
+        exemplo de multiplicidade. Note que, em cada uma das extremidades da linha, existem indicadores (valores), descritos, que identificam a quantidade de
+        elementos envolvidos nessa associação. No caso, a interação presente na
+
+    Tabela UML 
+        Indicador  Significado
+        0..1         0 ou 1
+        1           Somente 1
+        0..*        0 ou mais
+        n       Somente n (onde n > 1)
+        *           Muitos
+        0..n    0 até n (onde n > 1)
+        1..n    1 até n (onde n > 1)
+        n..m    Onde n e m > 1, ambos
+        n..*    n ou mais (onde n > 1
