@@ -35,4 +35,124 @@ Notação para o diagrama de casos de uso
         0..n    0 até n (onde n > 1)
         1..n    1 até n (onde n > 1)
         n..m    Onde n e m > 1, ambos
-        n..*    n ou mais (onde n > 1
+        n..*    n ou mais (onde n > 1)
+
+Herança e relacionamentos 
+    Herança é o relacionamento dos casos de uso 
+    Permite que um caso obetenha definições e funcionalidades de outro caso 
+    Os casos especializados herdam as características do caso em geral 
+
+    Herança entre atores especializados herdam todas as características do ator geral
+    Casos de uso e relacionamentos 
+    representada por uma linha solida com uma seta na extremidade 
+
+    Relacionamento de inclusão entre casos de uso
+    Indica a obregatoriedade do caso de incçusão 
+    Representada por uma linha tracejadad com uma seta na extremidade, apontando para o caso de inclusão 
+    Estereótipo <<include>> 
+
+    Extensão de relacionamento entre casos de uso 
+    Será execurado se determinada condição for satisfeita
+    Representada por uma linha tracejada com uma seta na extremidade, apontando para o lado oposto do caso estendido 
+    Estereótipo <<extend>> 
+
+
+Identificando os casos de uso e funcionalidades
+    Requisitos x casos de usos 
+
+    Montar uma lista de requisitos 
+    Identificar as principais funcionalidades       
+    Agrupá-las em funcionalidades
+    Funcionalidade macro = casos de uso 
+
+    Requisitos funcionais            /               Requisito funcional Descrição
+        R1                              O usuário deverá realizar cadastro, criar uma conta no aplicativo, no seu primeiro acesso.
+        R2                              O usuário deverá receber um e-mail com o seu respectivo domínio de usuário e sua senha temporária, após finalizar o cadastro.
+        R3                              O aplicativo deverá ter um controle de segurança para cada tipo de usuário.
+        R4                              O cliente poderá realizar seu pedido em qualquer restaurante cadastrado.
+        R5                              O cliente poderá efetuar o pagamento pelo próprio aplicativo.
+        R6                              O cliente poderá efetuar o pagamento usando cartão de crédito ou débito.
+        R7                              O cliente poderá utilizar cupom de desconto no momento do pagamento.
+        R8                              O restaurante deverá confirmar o recebimento do pedido.
+        R9                              O entregador deverá consultar as entregas atribuídas a ele, no seu horário de atendimento.
+        R10                             O entregador poderá consultar todas as suas entregas já realizadas.
+        R11                             O entregador deverá informar quando finalizar a entrega.
+        R12                             O cliente poderá avaliar a qualidade do pedido entregue.
+
+    Agora vamos criar ma tabela  com os requisitos e casos de uso ou macro 
+
+    Requisitos envolvidos       /       Caso de uso                        
+        R1, R2                          Cadastrar usuário            
+        R3                              Logar no app.                
+        R4                              Realizar pedido                      
+        R5, R6                          Efetuar pagamento                    
+        R7                              Aplicar desconto                     
+        R8                              Confirmar pedido                     
+        R9, R10                         Receber pedido                      
+        R11                             Finalizar entrega                   
+        R12                             Avaliar pedido                      
+
+
+Identificando os atores, sistemas e metas 
+    Mapeando os atores 
+    Identificar na lista de requisitos qual ator é responsavel por cada funcionalidade 
+    Relacionar requisito, casos de uso e ator 
+
+    Requisitos envolvidos       /       Caso de uso         /               Atores
+        R1, R2                          Cadastrar usuário           cliente , restaurante e entregador
+        R3                              Logar no app.               cliente , restaurante e entregador
+        R4                              Realizar pedido                     cliente 
+        R5, R6                          Efetuar pagamento                   cliente 
+        R7                              Aplicar desconto                    cliente 
+        R8                              Confirmar pedido                    restaurante 
+        R9, R10                         Receber pedido                      entregador
+        R11                             Finalizar entrega                   entregador
+        R12                             Avaliar pedido                      cliente 
+
+    Especificação do caso de uso 
+
+    Ser objetivo e descrever em detalhes e de forma textual as interaçõe entre o ator e o sistema 
+    Existe ua sequência lógica de execução 
+    As especificações deve seguir uma estrutura de tópicos para facilitar o entendiemnto 
+
+    A especificação composta pela seguinte estrutura:
+
+    Nome de caso de uso         /   Cadastrar usuario
+    Atores                      /   Cliente, restaurante e entregador
+    Descrição                   /   Permitir o cadastro de usuários no aplicativo
+    Pré-condições               /   Possuir documentos de identificação, dados bancários
+    Pós-condições               /   Dados amazenados no banco de dados, permitindo acesso à aplicação 
+
+    Proxima etapa: 
+
+                                Fluxo basico 
+    Ações dos atores                /      Ações do sistema
+                                        1 - Sistema apresenta tela com opção para usuario informar qual o sue tipo de ususario 
+                                        (Cliente, Restaurante e entregador)
+    2 - O usuario seleciona o tipo
+    Cliente 
+                                        3 - O sistema carrega na tela um formulário com os seguintes dados para preencheminto: CPF, Nome,
+                                        Endereço, Cidade, Estado, País, E-mail, e os botões salvar e limpar 
+    4 - O usuario preenche os dados e 
+    pressiona o botão                   
+                                        5 - O sistema salva no banco de dados os dados do usuario Cliente e encaminha um e-mail com a senha
+                                        temporária para o primeiro acesso 
+
+                                Fluxo Alternativo 1 - Cadastrar Restaurante
+                                    /
+                                        1 - O sistema carrega na tela um formulário com os seguintes dados para preencheminto: CNPJ, Nome do Estabelecimento,
+                                        Nome Fantasia, Endereço, Cidade, Estado, País, e-mail, e os botões de salvar e limpar   
+    2 - O usuário preenche os dados
+    e pressiona o botão salvar
+                                        3 - O sistema salva no banco de dados os dados do usuário Restaurante e encaminha um e-mail com senha temporária
+                                        para o primeiro acesso
+
+                                Fluxo Alternativo 2
+                                    /   
+                                        1 - O sistema carrega na tela um formulário com os seguintes dados para preenchimento: CPF, Nome do Estabelecimento,
+                                        Nome Fantasia, Endereço, Cidade, Estado, País, e-mail, Dados dos veiculo (Placa) e os botões salvar e limpar
+    2 - O usuário preenche os dados
+    e pressiona o botão salvar
+                                        3 - O sistema salva no banco de dados os dados do usuário Entregador e encaminha um e-mail com senha temporária
+                                        para o primeiro acesso
+                                          
