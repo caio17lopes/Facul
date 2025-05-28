@@ -1,0 +1,25 @@
+Ferramentas para treinar em banco de dados e criação de diagrama
+    Mysql Workbench
+    DBDsegner.net
+    Brmodelo
+
+Segurança em banco de dados
+    Prmissas para segurança em Brmodelo
+        Identificação e autenticação de usuários
+        Controle de acesso
+        Integridade dos dados
+        Confidencialidade dos dados
+        Backup e recuperação
+
+    Criptografia em codificar os dados armazenados, de modo que apenas as pessoas autorizadas
+    possam acessa-los
+    É fundamental para garantir a segurança, protegendo a confidencialidade e a integridade das informações
+
+    Criptografia    
+        Utiliza dados matematicos para transforma os dados em texto especifico 
+        Dados em repouso e em transito
+        Possibilita a proteção ddos dados durante todo ciclo de vida
+        Armazenamento, transmmissão, processamento 
+        Maioria dos SGBDs possui soluções nativas 
+        Implementação correta  depende do ambiente especifico de BD e dos requisitos
+         

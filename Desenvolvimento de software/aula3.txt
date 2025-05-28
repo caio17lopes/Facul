@@ -15,3 +15,24 @@ Como nasce um software
         Faça uma ata da reunião 
 
 Ferramentas colaborativas de trabalho de equipe 
+    São softwares ou plataformas de que permitem o uso compartilhado
+    EX:
+        Trello:
+            gestão de metodos ageis 
+            usa conceitos de quadros listas e cartões 
+        Jira:
+            Ferramenta para gestão de projetos
+            Painel scrum personalizados 
+            Exclusivo para desenvolvimento agil 
+        Teams:
+            chamada de video 
+            substituiu o e-mail
+        discord:
+            criado para criar call e compartilhar tela 
+        zoom:
+            plataforma de reunião
+            permite coalboração movel 
+
+Versionamento e reúso
+    Reúso é qualquer parte de um sistema implementado anteriormente, podendo sr uma especificação, modulo, arquitetura, e padrões etc
+    O reúso pode ser empregado em qualqur fase do projeto e depende do conehcimento da equipe 

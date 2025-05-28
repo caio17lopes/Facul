@@ -120,3 +120,21 @@ Resolução de conflito e definição de prioridades
     Modelo Kano
     Considera as necessidades do cliente, quais seus desejos e como atinge
     sua satisfação.
+
+Verificação de requisitos, especificação e documentação de requisitos
+     A verificação ou validação de requisitos identifica se os requisitos atendem aos critérios de realismo, consistência e completude, indo ao encontro
+    do que o cliente deseja. Essa etapa é muito importante, pois identifica possíveis erros na documentação e, quando não são identificados durante a verificação de
+    requisitos, causam retrabalhos e elevação nos custos do projeto.
+    ° Revisão de requisitos
+    ° Prototipação
+    ° Geração de casos de teste 
+    
+    Especificação e documentos de requisitos
+        Uma especificação pode ser composta por um documento escrito, um modelo gráfico, ou matemático formal,
+        um protótipo ou qualquer combinação desses artefatos.
+
+    Metodologias ágeis 
+    ° Requisitos são alterados cosntatemente 
+    ° Documentação é escrita de maneira incremental
+    ° Registrada em cartões 
+    ° Usuário prioriza os requisitos que serão implemntados a cada incremento 

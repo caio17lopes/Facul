@@ -1,0 +1,53 @@
+Casos de uso e a interface com BD:
+     A equipe responsavel pela montagem de BD deve ser envolvida 
+     Identificar casos de uso em que possa existir transação de dados 
+     Armazenamento, conulta, alteração, exclusão, emissão de relatorios
+
+     O detalhamento dos campos serão utilizados na descricção do caso de uso 
+     Por exemplo, no cadstro do cliente no nosso aplicativo:
+        Endereço, número, complemento
+        Bairro, CEP, cidade, estado, país
+
+Diagrama de Atividades e Abstração do BD 
+
+    Diagrama de atividades:   
+    Apresentar as ações do sistema visando suas funcionalidades 
+    Similar aos fluxograms 
+
+    Elementos do Diagrama de Atividade:
+    Estados iniciais e finais: 
+        Uma bolinha sem contorno (inicial) uma bolinha com contorno(final)
+    Estado de ação ou atividades:
+        Indicam as atividades ou ações a serem realizadas 
+
+    Transições 
+    Pornto de decisão:
+        É uma seta que da a direção aonde aponto para um ponto de decisição  
+        Condição de guarda fica entre colchetes 
+    Barra de sincronização: 
+        Bifurcação ou fork 
+        União ou Join ( pode executar ações em paralelo)
+
+    Rais 
+        Representa uma forma logica de organizar as atividades
+
+Diagrma de Maquina de estado
+
+    Representa os estados possíveis de um sistema
+    Indica a transição de um estado para outroO objetivo é representar os estados de um caso de uso 
+    Estado:
+        Indica a situação de um objeto durante a execução de um processo 
+        Pode demonstrar 
+            Ocorrência de um evento
+            Reação, atender a uma condição 
+        Possui estado inicial e fina 
+
+Elementos do diagrma de sequência
+
+    Ator
+    Objetos
+    Linha de vida 
+    Foco no controle ou ativação
+    Mensagens ou estimulos 
+
+

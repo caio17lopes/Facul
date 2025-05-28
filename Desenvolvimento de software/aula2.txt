@@ -49,6 +49,7 @@ Aula Pratica 2
         Os aspectos de qualidade abrangem caracteristicas como usabilidade, confiabilidade, funcionabilidade e manutenibilidade
         Os requistos de software são a base a partir da qual a qualidade é medida 
         Aula pratica no scratch do MIT de programação visual 
-
+        
+        
 
 

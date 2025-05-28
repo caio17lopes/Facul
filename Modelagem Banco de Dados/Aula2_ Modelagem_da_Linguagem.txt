@@ -156,3 +156,11 @@ Identificando os atores, sistemas e metas
                                         3 - O sistema salva no banco de dados os dados do usuário Entregador e encaminha um e-mail com senha temporária
                                         para o primeiro acesso
                                           
+                                Fluxo de exceção 
+
+    Ações dos atores                /           Ações do sistema 
+
+                                            Caso o cpf ou cnpj cadastrado já exista, deve gerar alerta 
+
+
+    

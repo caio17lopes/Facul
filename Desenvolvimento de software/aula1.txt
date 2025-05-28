@@ -54,7 +54,7 @@ TEMA 2 – SISTEMA OPERACIONAL
     Gerencia todo o hardware e todo software do computador e realiza a comunicação entre eles  
     
     Função do SO
-    Facilitar o uso do computador pel ousuario
+    Facilitar o uso do computador pelo usuario
     Gerenciar recursos
     Controlar as execuções da CPU
 

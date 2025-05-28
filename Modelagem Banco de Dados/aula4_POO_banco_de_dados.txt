@@ -1,2 +1,114 @@
 Classes e objetos
+    Classes
+        Aprendemos a pensar em classes desde nossa infância (Classe ex: cachorro)
+        Aprendemos também a reconehcer pessoas, animais e objetos 
+        Classe: grupo de objetos que possuem as mesmas características (ex cachorro)
+        o sinal de - é private(privado) so quem esta dentro dessa classe tem acesso 
+        + é um metodo publico 
+        Concreta - possui ibjetos instanciados 
+        Abstrata - não possui ibjetos instanciados 
+
+    
+    Objetos     
+        São instâncias de uma classe 
+        Classe pessoa:
+            Objetos:
+                Manuel
+                Pedro 
+                ex: Quem é a pessoa ? É o manuel 
+                Outra pessoa da classse pessoa : Pedro 
+
+Atributos, metodos e visibilidade 
+    Atributos:
+        São uma particularidade de uma classe 
+        São atributos que variam nos objetos 
+        Utilizar letras minusculas, no singular e sem acentuação
+        Nomes formados por duas ou mais palavras: a partir da segunda, cada palavra nova deve iniciar com letra maiúscula e não devem conte espaço entre elas 
+            EX : tipoPessoa
+    
+    ATENÇÃO : CLASSE É COMO FOSSE O NOME GENERICO POR EXEMPLO CARRO, MAS DENTRO DE CARRO EXISTE DIFERENÇAS COMO : SEDAN, HATCH, SUV, PICAPE ESSES SÃO ATRIBUTOS OU PODE SER ATE MESMO PELA COR 
+        EX: CLASSE : CARRO
+        ATRIBUTOS : - COR : CHAR (APENAS LETRAS)
+        ATRIBUTOS: - quantidadePorta (INT APENAS NUMEROS INTEIROS )
+        
+        EX: KA:CARRO (OBJETO: KA)
+        COR: PRATA
+        quantidadePorta: 2
+
+        EX: SIENA: CARRO (OBJETO: SIENA)
+        COR: VINHO
+        quantidadePorta: 4 
+
+    Metodo  
+        É a funcionalidade de uma classe 
+        Metodo também é chamado de comportamento 
+        Função que pode ser executadad
+        Usar verbo no infinitivo
+        Padrão de nomeclatura igual do a tributo 
+            EX: 
+                PEDIDO (classe)
+                - data: int (atributo)
+                - Entrega: int (atributo)
+                +calcularPedido(chamada e função): double (metodo)(double: porque vai retornar um numero)
+
+                Entregador (classe)
+                - matricula: int (atributo)
+                - Veiculo: char (atributo)
+                +finalizarEntrega(chamada de função): void (metodo)(void: é retorna nada)
+
+    visibilidade
+        Define se um metodo ou atributo pode ser visualizado por outra classe
+        São identificados por meio de palvras ícones 
+        Forma de garantir integriade dos dados
+
+        Publico (public+)
+            Pode ser visualizado e usado por qualquer um 
+
+        Protegido(protected #)
+            Pode ser utilizado e visualizado somente pela classe em que foi declarado e subclasses
+
+        Privado (private -)
+            Pode ser utilizado e visualizado somente pela classe em que foi declarado 
+
+    Herança e subclasses, abstração encapsulamento, polimoformismo
+        Herança 
+            Permite o reaproveitamento de atributos e metodos 
+            A superclasse possui subclasses derivadas que herdam seus a tributos e métodos e acrescenta suas proprias características
+
+        Conceito de Abstração
+            Permite representar apenas as características reais que possuem alguma relevância para a solução que será desenvolvida 
+
+        Encapsulamento 
+            Restringe acesso ao objeto e assegura que qualquer modificação ou comunicação ocorra seguindo um padrão definido de operações 
+
+        Polimorfismo 
+            Permite que objetos diferentes respondam de forma diferente 
+            O sistema reconhece o método que deverá ser executado 
+
+    Relacionamento e multiplicidade 
+
+        Dependência
+        Generalização
+        Associação
+
+        Dependência
+            O relacionamneto de dependecia ( uma classe precisa de outra classe para funcionar)
+
+        Generalização
+            Por exemplo Classe animal e onça e leão são subclasses
+
+        Associação
+            Mostra como as classes estão relacionadas entre si 
+                Associação unária 
+                Associação binaria
+                Associação ternaria (N-ária)
+
+
+    multiplicidade
+    0..1 no minimo zero e maximo 1 
+    1..1 um e somente um
+    0..* no minimo nenhum e no maximo muitos 
+    *   Muitos
+    1..* No minimo um e no maximo muitos
+    3..5 no minimo tres e no maximo cinco 
     

@@ -1,0 +1,12 @@
+Historia do Java script
+
+    Surgiu em 1995 por Brendan Eich
+    Desenvolvido para Netscpe
+    A ideia do java script é colocar o cliente para fazer o processamento de dados minimizando o servidor e o consumo de banda
+    O ECMA formalizou em 1997 para que o JavaScript funcionosse de forma padrão em todos os navegadores
+    ECMAscript é a base para implementação do JavaScript hoje
+    Linguagem responsavel pelo comportamento das paginas web
+    Baseada em C 
+
+Configurações 
+    

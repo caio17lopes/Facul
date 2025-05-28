@@ -1,0 +1,73 @@
+Projeto de banco de dados (BD)
+    É um processo de planejamento e criação de uma estrutura organizada e eficiente para armazenar e gerenciar dados
+    Consiste em identificar requisitos relacionados a captura, armazenamento e recuperação de dados por meio de uma solução computacional 
+    
+    Etapas do projeto de DB
+        Analise de requisitos 
+        Design do modelo de dados
+        Implementação da estrutra de DB 
+        Restrição e integridade dos dados 
+
+    O projeto de um banco de dados possui 3 etapas 
+        1 - modelo conceitual, 
+        2 - modelo logico 
+        3 - modelo fisico 
+
+    Revisar alguns conceitos
+        Dado, informação e conhecimento 
+        Sistema de arquivos 
+        Redundância e integridade 
+        Banco de dados 
+        SGBD
+        Modelagem de dados 
+
+    Dado: 
+        Um dado é a representação simbólica de um fato, ou seja, é um elemento que pode ser gerado por mecanismos de controle, documentos, anotações, planilhas. 
+        São fatos descritos na sua forma bruta, não organizados, não processados, não relacionados, não avaliados ou interpretados, ou seja, descrevem apenas partes isoladas de um evento (Côrtes, 2008).
+
+        informação: 
+            A informação é criada quando os dados são processados em um formato significativo. 
+            Os dados organizados e classificados para atender um determinado objetivo são chamados de informação (Batista, 2006). 
+
+        conhecimento:
+            Conhecimento é a intepretação da informação construida 
+    
+    SGBD (Sistema Gerenciador de banco de dados):
+        Ex: mysql, Oracle, sql etc
+
+    Modelagem de dados
+        É a forma de descrever, podr meio de uma linguagem formal somo serão estruturado os dados
+        O modelo deve capturar as regras de negocio e restrições que se aplicam aos dados
+
+    Modelo de dados 
+        Modelo conceitual
+            Alto nivel (entendimento do usuario)
+
+        Modelo relacional
+            Proximo ao SGBD(entendimento do dev)
+
+Modelo conceitual
+    Definição:
+        O modelo conceitual é uma forma de descrever de maneira abstrata a estrutura de um banco de dados independente do tipo de SGBD
+
+    Como construir ?
+        Utilizamos o diagram de entidade e relacionamento
+        O primeiro artefato do projeto de BD a ser criado, cujo objetivo é facilitar de forma clara e precisa o entendimento dos requisitos do projeto
+        pelos usuários do sistema e desenvolvedores. 
+
+    Identificar entidades 
+        Precisamos analisar os documentos de requisitos, como lista de requisitos funcionais, diagrma de casos de uso e descrição dos casos de uso, em busca
+        de carcteristicas que possam indicar um objeto unico 
+    
+    Entidade forte: 
+        É aquela que não depende de outra entidade para existir, é representado por um retangulo (Ex: cliente, loja, entregador)
+
+    Entidade fraca:
+        É aquela que depende de outra entidade para existir, é representando por 2 retangulos( Ex: pedido )
+
+    Atributos das entidades 
+
+        Ex cliente tem o atributo :
+            CPF, Nome, Endereço, E-mail
+        Produto : 
+            codProduto, nomeProduto 
