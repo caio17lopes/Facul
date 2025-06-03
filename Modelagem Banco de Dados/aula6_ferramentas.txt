@@ -21,5 +21,33 @@ Segurança em banco de dados
         Possibilita a proteção ddos dados durante todo ciclo de vida
         Armazenamento, transmmissão, processamento 
         Maioria dos SGBDs possui soluções nativas 
-        Implementação correta  depende do ambiente especifico de BD e dos requisitos
-         
+        Implementação correta  depende do ambiente especifico de BD e dos requisitos de segurança 
+        Pode afetar a performançe do sistema 
+
+    Armazenamento de senhas 
+        Deve ser realizado de forma criptografada 
+        Uso de funções hash
+        Valor irreversivel e unico 
+        Uso de senhas complexas 
+        Alteradas regularmente 
+
+    Tipos de dados 
+        Garantem a integridade dos dados
+        Evitam erros de incersão e perda de dados 
+        Previnem ataques de injeção e codigo malicioso 
+
+    Gestão de usuarios 
+        Definição de politicas de acesso 
+        Controle de privilegios 
+        Autenticação 
+        Gestão de usuarios é um requisito obrigatorio da LGPD 
+
+    Perfis de acesso ao BD
+        Administrador
+        Desenvolvedor
+        Usuario comun 
+        Usuario externo
+        Auditor
+        
+
+Automatização e operação de BD

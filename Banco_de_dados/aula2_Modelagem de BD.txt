@@ -1,0 +1,17 @@
+Modelo Logico ou relacional 
+    Baseado na teroria dos conjuntos (algebra relacional)
+    Dados são estreuturados em tabelas ( gerenciado por um banco de dados)
+    Refinado pelo processo de normalização 
+    Base para criação de modelos fisicos (banco de dados)
+
+    Algebra relacional 
+        Linguagem de consulta formal 
+        Dados são representados como relações matematicas 
+        Operadores relacionais: unarios, binarios, derivados 
+
+    Restrições de integridade 
+        Integridade referencial
+        Restrição de unicidade 
+        Restrição de atributos e padrões 
+        Integridade da chave 
+        

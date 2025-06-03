@@ -1,0 +1,131 @@
+Conceitos, definições e modelos
+    Dados versus informações
+        Dado é uma parte de uma informação 
+        Informação é o resultado do dados
+
+    Banco de dados 
+        Sistema computadorizado de armazenamento de registros 
+        EX: Sistema de Delivery
+            Sistema acadêmico
+
+    Modelos de banco de dados
+        É a forma como os bancos de dados são construidos conceitualmente 
+        Modelos: 
+            Modelo herarquico 
+            Modelo de rede
+            Modeloo orientado a objetos 
+            Modelo NoSQL (não relacional)
+            Modelo relacional
+
+Sistema Gerenciador de Banco de Dados(SGBD) e aplicações de banco de dados
+
+    SGBD é a interface entre oos dados de baixo níveel, armazenados em um banco de dados, e 
+    os usuarios e aplicações que desejam acessar e manipular esses dados 
+
+    Objetivos:
+        Abastração de dados 
+        Independencia de dados em relação as aplicações 
+
+        Exemplos:
+            DB2, Microsoft SQL Server, Oracle, MySql, PostgreSQL, entre outros
+
+    Caractrteristicas de um SGBD
+        Controle de redundancia
+        Compartilhamento dos dados e concorrencia
+        Controle de acesso
+        controle de transações 
+        Possibilidade de multiplas interfaces  
+        Restrições de integridade 
+        Backup e recuperação de dados
+        Eliminação de inconsistencias 
+        Padronização dos dados 
+
+    Pontos de atenção em um SGBD 
+        Dispositivos de controle adequados
+        Integridade das informações 
+        Levantamento de dados 
+
+    DBA (Administrador de banco de dados)
+
+        Definição do banc ode dados
+        Estrutura de armazenamento e definição de acesso aos dados
+        Esquema físico e organização dos dados
+        Controle de acesso dos usuarios
+        Cuidar da integridade dos dados
+        Acompanhar o desempenho do banco de dados 
+        Atividades de manutenção e Backup
+
+Modelagem de dados 
+    Modelagem de Dados
+        Consiste no levantamento e análise de dados sobre as informações e como relacionam-se entre si, desenvolvendo um modelo que representa 
+        a realidade de um cenario
+
+        Modelo basico: conceitual, lpogico e fisico 
+
+        A analise, juntamente com os modelos produzem o projeto de banco de dados
+
+Modelo entidade relacionamento :(MER) 
+    O modelo conceitual abrange uma visão geral do negocio:
+        Visão geral do negocio (regras)
+        Comunicação entre ususario e desenvolvedores 
+        Definição das entidades e principais campos 
+        Independente da implementação e do SGBD 
+        Descrição mais abstrata  do banco de dados 
+        Aplicação da tecnica do MER 
+
+    Abstração de alto nivel - visão do usuario 
+    É desenvolvido com bae em três elementos:
+        Entidade - objeto do mundo realidade
+        Campo - caracteristicas particularidades de vada objeto 
+        Relacionamento - relação entre entidades 
+
+    Entidade
+        Baseada na estrutura da chave primaria e no grau de dependencia 
+        Pode ser representada como:
+            Entidade fundamental - presença de uma chave primaria simples 
+            Entidade associativa - baseia - se em relação n:n envolvendo varias entidades 
+            Entidade fraca - depende de outra entidade para existir (dependencia existencial)
+
+    Instância de uma entidade 
+        Informações armazenadas nos campos de uma entidade 
+        Exemplo:
+
+        Pessoa 
+        nome                / cpf                   / endereco
+        Zanana Silva        /   123.456.789.00      / Rua das flores, 999
+        wilquison Souza     /   789.123.456.11      / Avenida 7 de setembro, 1  
+
+    Campos 
+        Caracteristicas de uma entidade 
+        Tipos de campos: 
+            Obrigatorio
+            Opcional ou nulo
+            simples ou atomico 
+            Composto
+            Monovalorado 
+            Multivalorado
+            Derivado 
+        Dominio:
+            possivel valor definido para determinado campo 
+            exemplo: salario, valor numerico positivo com duas camadas decimais 
+
+        Chaves de um campo 
+            Identificam cada instancia separadamente em um banco de dados 
+            Garantem o relcionamento entre entidades 
+            Tipos: 
+                Chave primaria (PK - primary key)
+                    chave primaria não natural
+                Chave estrangeira (FK - Foreign Key)
+
+Cardinalidade
+    Determina a relação entre entidades 
+    Com base nas instâncias do objeto
+    Formas:
+        Um para um (1:1) ( raramente usado)
+        Um para muitos (1:n) / muitos para um (n:1) (A chave estrangeira é sempre declarada no lado da entidade que recebe muitos (n))
+        Muitos para muitos (n:n) (Varias instâncias de uma entidade associadada a varias instâncias) ( no caso a chave estrangeira vai ficar  na entidade associativa)
+        Máxima e minima 
+
+
+    
+
