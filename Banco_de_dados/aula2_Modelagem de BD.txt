@@ -15,3 +15,68 @@ Modelo Logico ou relacional
         Restrição de atributos e padrões 
         Integridade da chave 
         
+Normalização 
+    Processo de refinamento aplicado ao moelo logico 
+    Beneficios:
+        Minimizar redundancias e incosistencias 
+        Reduzi o tamanho fisico do banco de dados 
+        Melhorar a manipulação com o banco de dados
+    Formas Normais (Fns)
+        Primeira forma normal:
+            Regra:
+                    Cada tupla de dados deve possuir um identificador unico(chave primaria)
+                    Cada tupla de dados deve conter apenas dados atomicos(não repetidos)
+        Segunda forma normal:
+            Regras: 
+                    Em conformidade com a 1FN
+                    Ausencia de atributos dependentes de parte de chave primaria 
+        Terceira forma normal:
+            regras:
+                    Em conformidade com a 2FN
+                    Ausencia de atributos que não sejam chaves na relação 
+
+Modelo fisico 
+    Implementação do banco de dados 
+    Considera as limitações do SGBD escolhido 
+    Criação das restrições 
+    Resultado - modelo bem estruturado 
+        Dados com melhor qualidade
+        Menos complexidade nas atualizações e manutenções no banco de dados  
+
+Schema/ Modelo
+    Modelo dimencional 
+        Implementação em banco de dados relacionais
+        Objetivo: rapides na recuperação de dados
+        Desenvolvimento para data Warehouse e Datamart
+        Dois pilares: tabela fato e tablea deimensão 
+
+        Tabela dimensão: 
+            Classificação das medidas que descrevem os fatos 
+            Exemplo: noem da cidade para visualizar o valor das vendas
+
+        Tabela fato:
+            Armazena as medidas que serão analisadas
+            Exemplo: valor das vendas  
+
+Structured Query Language- Sql
+    Responsavel por toda e qualquer operação em um banco de dados 
+    Por meio do Sql ( criado pela IBM 1970) diferentes aplicações acessam um banco de dadosExistem variações do SQL: Oracle, Microsoft entre outros
+
+    SQL - Dialetos
+        As empresas que desenvolvem o SQL criam uma linguagem propria para desenvolvimento de codigos masi avançados
+        Essas linguagens são conhecidas comodialetos
+        Exemplo:
+            PL/SQL é a linguagem do Oracle e Mysql
+            Transact-SQL (T-SQL) Microsoft e Sybase
+            SQL/PL: DB2 da IBM, entre outras
+
+    Atualizações:
+        Inclusão dos tipos booleanos (verdadeiro/ falso)
+        Savepoint para transações
+        Comando Merge
+        Campos autoincrementos
+        suporte ao XML e extensões Json
+
+    SQL - Query/Script
+        Linha ou bloco de instruções AQL que serão executados por um SGBD
+        todo comando na query de ser finalizado com ponto e virgula (;)
