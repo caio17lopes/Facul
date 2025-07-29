@@ -2,6 +2,9 @@
 
 # Criar função para armazenar dados e valores ja 
 
+from tkinter import *
+
+
 
 eucafloor = {
     'eucafloor':{
@@ -33,3 +36,19 @@ def acessorios():
     perfil_t = int(input('Informe a quantidade de perfil T: '))
     perfil_r = int(input('Informe a quantidade de perfil redutor: '))
     manta = int(input('Informe a quantidade de manta: '))
+
+mostrar = eucafloor
+
+
+janela = Tk()
+
+janela.title('Sistema de estoque')
+texto_orientacao = Label(janela, text= 'Valores dos produtos')
+texto_orientacao.grid (column=0, row=0)
+
+botao = Button(janela, text = 'Valores dos materiais', command= mostrar)
+botao.grid(column=0, row=1)
+texto_euca = Label(janela, text='')
+texto_euca.grid(column=0 ,row=2)
+
+janela.mainloop()
