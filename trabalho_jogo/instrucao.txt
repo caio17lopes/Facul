@@ -1,0 +1,7 @@
+Criação UML do jogo 
+Estruturar as clases
+Criar o menu 
+Criar o background, som fontes, da primeira fase 
+Site para baixar a fase = craftpix.net
+
+Site para judar a gaurdar dados sensiveis para não subior no github = gitignore.io
