@@ -1,4 +1,4 @@
 Criação UML do jogo 
 Estruturar as clases
 Criar o menu 
-Criari o background, som fontes, da primeira fase 
+Criar o background, som fontes, da primeira fase 
