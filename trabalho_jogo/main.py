@@ -1,14 +1,5 @@
-import pygame as pg 
+import pygame 
+from Model.Game import Game 
 
-print('Setup Start')
-pg.init()
-window = pg.display.set_mode(size=(600,400))
-print('Setup End')
-
-print('Loop Start')
-while True:
-    #check for all events
-    for event in pg.event.get():
-        if event.type ==pg.QUIT:
-            pg.quit()# close window
-            quit() # end game
+game = Game()
+game.run()
