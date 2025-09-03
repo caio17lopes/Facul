@@ -1,0 +1,22 @@
+Definição do CSS
+    CSS se traduz folhas de estilo em cascata 
+    Controla os elementos são a presentados na tela 
+    Diminui muito o trabalho, consegue controlar o layout de multiplas paginas web
+    Arquivos externos são armazenados em arquivos .CSS
+    Tags como <font> e atributos de cor foram adcionados no html 3.2
+    ruim para os webdeveloper, trocar estilo individualmente é muito custuoso
+    
+    Porque usar o CSS?
+        HTML não foi pensado paa descrever formatação, apenas conteudo
+        CSS foi criado pela W3C
+        Modifica varios HTML com apenas um único arquivos
+
+    Sintaxe do CSS 
+    seletor     propriedade/valor   propriedade/valor
+    h1          {color:blue; font-size: 12px}   
+
+    seletor
+    Em vez de usarmos a tag podemos usar o class (veja a aula4 pratica)
+
+    Ordem da cascata de estilo 
+        

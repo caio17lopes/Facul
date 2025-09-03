@@ -1,0 +1,4 @@
+Criação UML do jogo 
+Estruturar as clases
+Criar o menu 
+Criar o background, som fontes, da primeira fase 

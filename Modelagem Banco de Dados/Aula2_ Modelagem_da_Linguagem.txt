@@ -1,0 +1,166 @@
+Notação para o diagrama de casos de uso 
+
+    Caso de Uso 
+        Um caso de uso pode ser definido, de forma objetiva, como uma   funcionalidade do sistema que será desenvolvido, ou seja, um requisito funcional
+        mapeado. Além disso, representa uma ou mais ações que o sistema executará. O elemento que representa o caso de uso é uma elipse contendo no seu interior
+        o nome da ação que será executada. Esse nome deve ser formado pela união de um verbo e um substantivo. Na Figura 2, note que existem dois casos de
+        uso, o primeiro chamado Realizar pedido, cujo nome é junção do verbo realizar e do substantivo pedido; o segundo, Efetuar pagamento, junção do verbo efetuar
+        e do substantivo pagamento  
+    
+    Ator   
+        O ator representa uma entidade externa que possui algum tipo de interação com o sistema, por meio de uma entrada de dados ou uma resposta
+        processada. O ator pode ser um usuário desempenhando determinado papel na execução do sistema, um dispositivo de hardware ou até mesmo outro sistema.
+        Ou seja, o ator é quem demandará a execução dos casos de uso. O elemento que representa o ator é um boneco, conhecido popularmente por boneco-palito.
+        Para identificá-lo, deve-se colocar, logo abaixo da representação, o seu nome (papel assumido pelo ator), com a primeira letra em maiúsculo. A Figura 3 mostra
+        alguns exemplos de atores.
+    
+    Associação 
+        O relacionamento entre atores e casos de uso é chamado de associação. Sua função é indicar que determinado ator utiliza ou executa uma ou mais
+        funcionalidades (casos de uso) do sistema representado no diagrama de casos de uso. O elemento que representa uma associação é uma linha sólida entre o
+        ator e o caso de uso. Como mostra a Figura 4, o ator intitulado Cliente executa os casos de uso Realizar pedido e Realizar pagamento.
+        O uso da linha sólida indica que a interação entre o ator e o caso de uso ocorre nos dois sentidos. Caso seja necessário indicar de forma explícita a
+        direção em que a interação ocorre (navegabilidade), deve-se utilizar uma linha sólida com uma seta em uma das extremidades
+        Outra propriedade que também pode ser descrita no diagrama de caso de uso é a multiplicidade (cardinalidade) existente entre os atores e os casos de
+        uso. A multiplicidade tem como objetivo apresentar de forma explícita quantos elementos estão interagindo, em uma associação. A Figura 6 mostra um
+        exemplo de multiplicidade. Note que, em cada uma das extremidades da linha, existem indicadores (valores), descritos, que identificam a quantidade de
+        elementos envolvidos nessa associação. No caso, a interação presente na
+
+    Tabela UML 
+        Indicador  Significado
+        0..1         0 ou 1
+        1           Somente 1
+        0..*        0 ou mais
+        n       Somente n (onde n > 1)
+        *           Muitos
+        0..n    0 até n (onde n > 1)
+        1..n    1 até n (onde n > 1)
+        n..m    Onde n e m > 1, ambos
+        n..*    n ou mais (onde n > 1)
+
+Herança e relacionamentos 
+    Herança é o relacionamento dos casos de uso 
+    Permite que um caso obetenha definições e funcionalidades de outro caso 
+    Os casos especializados herdam as características do caso em geral 
+
+    Herança entre atores especializados herdam todas as características do ator geral
+    Casos de uso e relacionamentos 
+    representada por uma linha solida com uma seta na extremidade 
+
+    Relacionamento de inclusão entre casos de uso
+    Indica a obregatoriedade do caso de incçusão 
+    Representada por uma linha tracejadad com uma seta na extremidade, apontando para o caso de inclusão 
+    Estereótipo <<include>> 
+
+    Extensão de relacionamento entre casos de uso 
+    Será execurado se determinada condição for satisfeita
+    Representada por uma linha tracejada com uma seta na extremidade, apontando para o lado oposto do caso estendido 
+    Estereótipo <<extend>> 
+
+
+Identificando os casos de uso e funcionalidades
+    Requisitos x casos de usos 
+
+    Montar uma lista de requisitos 
+    Identificar as principais funcionalidades       
+    Agrupá-las em funcionalidades
+    Funcionalidade macro = casos de uso 
+
+    Requisitos funcionais            /               Requisito funcional Descrição
+        R1                              O usuário deverá realizar cadastro, criar uma conta no aplicativo, no seu primeiro acesso.
+        R2                              O usuário deverá receber um e-mail com o seu respectivo domínio de usuário e sua senha temporária, após finalizar o cadastro.
+        R3                              O aplicativo deverá ter um controle de segurança para cada tipo de usuário.
+        R4                              O cliente poderá realizar seu pedido em qualquer restaurante cadastrado.
+        R5                              O cliente poderá efetuar o pagamento pelo próprio aplicativo.
+        R6                              O cliente poderá efetuar o pagamento usando cartão de crédito ou débito.
+        R7                              O cliente poderá utilizar cupom de desconto no momento do pagamento.
+        R8                              O restaurante deverá confirmar o recebimento do pedido.
+        R9                              O entregador deverá consultar as entregas atribuídas a ele, no seu horário de atendimento.
+        R10                             O entregador poderá consultar todas as suas entregas já realizadas.
+        R11                             O entregador deverá informar quando finalizar a entrega.
+        R12                             O cliente poderá avaliar a qualidade do pedido entregue.
+
+    Agora vamos criar ma tabela  com os requisitos e casos de uso ou macro 
+
+    Requisitos envolvidos       /       Caso de uso                        
+        R1, R2                          Cadastrar usuário            
+        R3                              Logar no app.                
+        R4                              Realizar pedido                      
+        R5, R6                          Efetuar pagamento                    
+        R7                              Aplicar desconto                     
+        R8                              Confirmar pedido                     
+        R9, R10                         Receber pedido                      
+        R11                             Finalizar entrega                   
+        R12                             Avaliar pedido                      
+
+
+Identificando os atores, sistemas e metas 
+    Mapeando os atores 
+    Identificar na lista de requisitos qual ator é responsavel por cada funcionalidade 
+    Relacionar requisito, casos de uso e ator 
+
+    Requisitos envolvidos       /       Caso de uso         /               Atores
+        R1, R2                          Cadastrar usuário           cliente , restaurante e entregador
+        R3                              Logar no app.               cliente , restaurante e entregador
+        R4                              Realizar pedido                     cliente 
+        R5, R6                          Efetuar pagamento                   cliente 
+        R7                              Aplicar desconto                    cliente 
+        R8                              Confirmar pedido                    restaurante 
+        R9, R10                         Receber pedido                      entregador
+        R11                             Finalizar entrega                   entregador
+        R12                             Avaliar pedido                      cliente 
+
+    Especificação do caso de uso 
+
+    Ser objetivo e descrever em detalhes e de forma textual as interaçõe entre o ator e o sistema 
+    Existe ua sequência lógica de execução 
+    As especificações deve seguir uma estrutura de tópicos para facilitar o entendiemnto 
+
+    A especificação composta pela seguinte estrutura:
+
+    Nome de caso de uso         /   Cadastrar usuario
+    Atores                      /   Cliente, restaurante e entregador
+    Descrição                   /   Permitir o cadastro de usuários no aplicativo
+    Pré-condições               /   Possuir documentos de identificação, dados bancários
+    Pós-condições               /   Dados amazenados no banco de dados, permitindo acesso à aplicação 
+
+    Proxima etapa: 
+
+                                Fluxo basico 
+    Ações dos atores                /      Ações do sistema
+                                        1 - Sistema apresenta tela com opção para usuario informar qual o sue tipo de ususario 
+                                        (Cliente, Restaurante e entregador)
+    2 - O usuario seleciona o tipo
+    Cliente 
+                                        3 - O sistema carrega na tela um formulário com os seguintes dados para preencheminto: CPF, Nome,
+                                        Endereço, Cidade, Estado, País, E-mail, e os botões salvar e limpar 
+    4 - O usuario preenche os dados e 
+    pressiona o botão                   
+                                        5 - O sistema salva no banco de dados os dados do usuario Cliente e encaminha um e-mail com a senha
+                                        temporária para o primeiro acesso 
+
+                                Fluxo Alternativo 1 - Cadastrar Restaurante
+                                    /
+                                        1 - O sistema carrega na tela um formulário com os seguintes dados para preencheminto: CNPJ, Nome do Estabelecimento,
+                                        Nome Fantasia, Endereço, Cidade, Estado, País, e-mail, e os botões de salvar e limpar   
+    2 - O usuário preenche os dados
+    e pressiona o botão salvar
+                                        3 - O sistema salva no banco de dados os dados do usuário Restaurante e encaminha um e-mail com senha temporária
+                                        para o primeiro acesso
+
+                                Fluxo Alternativo 2
+                                    /   
+                                        1 - O sistema carrega na tela um formulário com os seguintes dados para preenchimento: CPF, Nome do Estabelecimento,
+                                        Nome Fantasia, Endereço, Cidade, Estado, País, e-mail, Dados dos veiculo (Placa) e os botões salvar e limpar
+    2 - O usuário preenche os dados
+    e pressiona o botão salvar
+                                        3 - O sistema salva no banco de dados os dados do usuário Entregador e encaminha um e-mail com senha temporária
+                                        para o primeiro acesso
+                                          
+                                Fluxo de exceção 
+
+    Ações dos atores                /           Ações do sistema 
+
+                                            Caso o cpf ou cnpj cadastrado já exista, deve gerar alerta 
+
+
+    

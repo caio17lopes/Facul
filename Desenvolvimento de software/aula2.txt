@@ -1,0 +1,55 @@
+Crise do Software
+    O conceito de engenharia de software inicio em 1965 apos a crise do software oande o software naõ conseguiu acompanhar a evolução do hardware
+    Bug = Erro de intepretação de um requisito, erro de sintaxe , causa desconhecida 
+    Bug mais famoso : Falha da sonda Mariner1
+    Bug mais famosso da engenharia de software: Acelerador medico, para tratar de tumor, levou 5 pessoas a óbito além de varias pesoas expostas a radiação
+    bug: divisão de numeros com ponto flutuante. Prejuizo de bilhões na troca de processadores 
+
+Profissional de TI
+    Engenheiro de software:Especifica o planejament, gerencia a produção, avalia o processo. Não coloca a mão na massa
+    Analista compreende o problema,m levanta os requisitos e descobri o que o cliente precisa, não bota a mão na massa
+    Desenvolveldor cria o programa, conhece as linguagens de programção, conhecimento em teste e depuração
+    Eng da computação , base de calculo, desenvolvedor de software e hardware, microcontroladores e chips, é a soma de cientista da computação e engenheiro eletricista
+    Gestor de TI, administra recursos, tratamento e proteção de SI, conhecimento em marketing
+    Cientista de dados, reúne e interpreta dado, especialista analitico, capacidade ler, escrever, comunicar e raciocinar com dados
+    Adm de redes, instalação de sistemas de infraestruturas, documentar projetos e configurar redes
+    Adm de banco de dados, implementa, projeta soluções em banco de dados, responsavel pela segurança e integridade dos dados, Alternativa engenharia de dados 
+
+Perifl do Proffisional de TI
+    Habilidade basica: habilidade de TI
+    habilidade tecnica : hard skill
+        Estudo formal 
+        Conhecimento fundamdental
+        especialista em algumas areas e generalista em outras 
+    Habilidade comportamental : soft skills
+        Subjetivas
+        Resolver problemas,comunicação, adaptabilidade, tomada de decisão, Alto QE(quociente emocional) 
+    Competência Profissional    
+        Conhecimento, atitude, habilidade
+
+Importância do Profissional de TI
+    Area de Ti é a que masi cresce 
+    É 70 mil vagas por ano 
+    Existe deficit de profissionais 
+    O primeiro gromador da historia foi Ada Lovelance 
+    Grace murry criou o COBOL e criou o termo bug 
+    Hedy Lammar a mão do wifi e CDMA 
+    Tecnologias emergentes : computação em nuvem, cloud computing 
+        Definição de nuvem : é entrega sob demanda de poder computacional, armazenamento de banco de dados, aplicativos e outros, criação de ambiente 
+        Conteitos de contêineres: meodo de virtualização de sistema operacional,  permite executar um aplicativo e suas dependências em processos isolados de recursos
+        simplificando: contêineres empacotam o codigo, as configuações e as dependencias de um aplicaivo em um unico objeto ex: Docker
+        Computação de borda CDNs: Aproxima os equipamentos de onde os dados são gerados ex: netflix e Disney Plus etc, armazena os dados aos locais de entrega
+        Iot: Possibilidade de conectar internet ccom objetos que utilizamso no dia a dia, ex: alexa, interruptor inteligente
+
+Mitos e verdades do desenvolviemnto de software 
+    ...
+
+Aula Pratica 2 
+    Aspectos técnicos de qualidade de software
+        Os aspectos de qualidade abrangem caracteristicas como usabilidade, confiabilidade, funcionabilidade e manutenibilidade
+        Os requistos de software são a base a partir da qual a qualidade é medida 
+        Aula pratica no scratch do MIT de programação visual 
+        
+        
+
+

@@ -1,0 +1,6 @@
+sistema tem que ter 
+app.py = arquivo principal 
+db.py = conexão com o banco de dados
+login.py = tela de login
+dashboard.py = interface principal 
+produtos.py = tela de cadastro 

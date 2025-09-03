@@ -1,0 +1,43 @@
+SQL Data Types
+    Todo objeto que armazena um dado possui um tipo associado
+    Objetos podem ser colunas, variaveis, parâmetros, retornos de funções, entre outros 
+    Lembrete: armazenamento de dados gera custo. Sendo assim, a definição correta é importante
+    Utilizaremos o Sistema Gerenciador de Daos (SGBD) MySql
+    Categoria dos tipos de dados:
+        Numericos
+        Cadeia de caracteres
+        Valores temporais 
+    A de finição de uma coluna engloba:
+        Tipo de dado 
+        Comprimento ou tamanho do valor 
+        Para dados numericos, o comprimento irá definir:
+            Precisão - total de dígitos em um numero 
+            Escala - casas decimais de um numero 
+
+    Char vs varchar:
+    Char - ocupa todo o espaço definido 
+    Varchar - ocupa o tamanho do texto mais um carctere para identificar o final 
+    Exemplos:
+        nome char (100) = 'Maria' ocupará 100
+        nome varchar(100) = 'Maria' ocupará 6 
+        Deve-se utulizar o tipo varchar nos campos que têm maior propensão a não receberem valor (vazios)
+        Para campos que usualmente recebem valor ( preenchido) deve-se optar peloo char 
+    Nchar e nvarchar - suportam UNICODE 
+
+
+SQL na pratica
+    Comando uteis para iniciar 
+    Principais comando do SQL 
+    SGBD: MySql
+    Ferramenta : MySQL Workbench
+
+SQL PK,FK e UK
+    Aprendendo a declarar chaves
+    Restrições de integridade do banco de dados
+    Tipos: 
+        chave primaria (pk)
+            chaves compostas
+        Chaves estrangeiras (fk)
+        unique key ( restrição de valor unico)
+
+SQL Constrains 

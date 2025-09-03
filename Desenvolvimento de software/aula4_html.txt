@@ -1,0 +1,72 @@
+HTML    
+    A internet começou na arpanet 1969
+        Com objetivo militar 
+        Protocolo é um conjunto de regras (NPC(Network Control Protocol ))
+            FTP (File transfer protocol)
+            DNS (Domain Name System)
+            SMTP (Simple Mail Transfer Protocol)
+            Protocolo TCP/IP - 1973
+        
+        TCP ( Transmission control protocol) quebra de mensagen em pacotes 
+            IP (Internet Protocol) endereçamento de maquinas 
+            Tecnologias permitiram o aumento da referindo 
+            Susbtitui o NPC por completo em 1983
+
+    Infraestrutura da internet 
+        Cliente vs Servidor 
+            Cliente 
+                Computador ou serviço que requisita algo 
+                Informação disponivel em outra máquina chamada servidor 
+                Exemplo:
+                    Navegador web, aplicativos e jogos on-line 
+            Servidor 
+                Computador dedicado a fornecer serviços 
+                Exemplos 
+                    Arquivos, paginas web, e-mail, banco de dados
+                Software responsaveis por oferecer serviços 
+                    Apache, Tomcat, Glassfish
+
+    História do HTML
+        Pagina Gopher só tinha texto igual ao command prompt sem interface grafica 
+        Hiper texto pode ser imagem video ou som
+        HTTP (HiperText transfer protocol)
+        HTML (HyperText Markup Language)
+        WWW (Wolrd Wide Web) - 1990
+        Criados por Tim Berners- Lee
+        Gipher virou HTTP
+        Mosaic
+            Internet explorer (codigo)
+            Netscape(equipe)
+                FireFox
+                Google crome 
+
+    Principais Tecnologias 
+        HTML ( marcação de texto) e CSS vai estilizar NÃO são linguagens de programação
+            W3C ( World Wide Web Consortium)
+            Gerenciado por Tim Berners-Lee
+            HTML1 - 1990
+            HTML 2 - 1995
+            HTML 3 - 1995
+            HTML 4 - 1997
+            XHTML - 2004 (DESCONTINUADO)
+            HTML5 - 2008 (html + css + javaScript )
+
+        CSS
+            Estilo 
+            Folha de estilo em cascata 
+            Formata layout das paginas 
+            Atualmente na versão 3
+            Também não é uma lingugem de programação 
+        
+        JavaScript 
+            Interatividade 
+            Manipulação de elementos de uma pagina 
+            Não é JAVA 
+            Esta é uma linguagem de programação interpretada 
+
+    Comandos HTML 
+     comando <h1></h1> (Titulo)
+     <p></p> ( paragrafo)      
+
+
+    

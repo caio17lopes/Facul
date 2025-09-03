@@ -1,0 +1,166 @@
+# Software, programas e sistemas
+    Software consiste em:
+    instruções (programas de computador) que, quando executadas, fornecem características, funções e desempenho desejados;
+    estruturas de dados que possibilitam aos programas manipular informações adequadamente;
+    informação descritiva, tanto na forma impressa quanto na virtual, descrevendo a operação e o uso dos programas.
+    Simplificando a definição anterior, podemos dizer que um software é um programa de computador e toda a documentação associada a esse programa.
+
+    Software
+        Sequência de passos ou instruções descritos por um algoritimo 
+    
+    Algoritimo 
+        Estrutura passo a passo de como im problema deve ser resolvido
+        ex: receita de bolo 
+
+    • Software de sistema (básico):
+        • sistemas operacionais;
+        • software utilitário.
+    • Software aplicativo.
+
+1.2 Software de sistema (básico)
+    Software básico consiste em uma coleção de programas para apoiar
+    outros programas. Realiza as tarefas de gerenciamento necessárias ao seu
+    funcionamento. Temos nessa categoria os sistemas operacionais e o software
+    utilitário.
+    Ex: Microsoft, Android, Linux, MacOS
+    
+Software Utilitarios
+
+    O software utilitário fornece ao usuário ferramentas para organizar os
+    discos, verificar a disponibilidade de memória e corrigir as falhas de
+    processamento. Costumamos dizer que são softwares úteis ao sistema
+    operacional, ou seja, que trabalham em função do sistema operacional.
+    São exemplos de utilitários: antivírus, compactadores, emuladores,
+    desfragmentadores, formatadores, backup.
+    Ex: Avast, AVG, Ccleaner, Winrar....
+
+1.3 Software aplicativo
+    O software aplicativo é também chamado apenas de aplicativo ou mais
+    popularmente app. Podemos dizer que é um software que realiza algum trabalho
+    para o usuário, ou seja, são programas que realizam tarefas específicas. Como
+    exemplo temos as planilhas, o editor de texto, os navegadores (browsers), o
+    editor de imagem, entre outros.
+    Ex: Word, Power Point, Excell, ADobe, Whatsapp, Google Crome, FireFox
+
+TEMA 2 – SISTEMA OPERACIONAL
+    Um sistema pode ser definido como um conjunto de partes que se
+    interagem para alcançar um determinado objetivo.
+    O que diferencia software de um sistema é que este pode ser definido
+    como um conjunto de softwares que interage para alcançar um determinado
+    objetivo ( sistemas tradutores também entram)
+    Ex: Microsoft, Android, Linux, MacOS, Visual Studio, Pycharm
+
+    Software é responsavel pela supervisão dos processos executados em um computador
+    Gerencia todo o hardware e todo software do computador e realiza a comunicação entre eles  
+    
+    Função do SO
+    Facilitar o uso do computador pelo usuario
+    Gerenciar recursos
+    Controlar as execuções da CPU
+
+    Sistemas tradutores
+    Converte programs escritos em codigo de linguagem de maquina (binaria)
+    
+    Intepretador : Seria exatamente um Visual Studio ou um pycharm ou qualquer outro intepretador similar
+    Compiolador : Vai gerar um executavel que vai ser instalado e rodado pela maquina 
+
+TEMA 3 -Algoritimos e Linguagens
+    Algoritimo é uma sequência de passos que visa atengir um objetivo bem definido
+     O objetivo aqui é representar mais fielmente o raciocínio envolvido na lógica de programação. 
+     Uma vez concebida uma solução, pode ser traduzida para qualquer linguagem de programação.
+
+     Sinatxe X semântica
+     Gap semântico entre logica de programação e a logica do dia a dia 
+     Semântica na linguagem de programação: referindo ao conteúdo, ao significado
+     Sintaxe está relacionada com as regras, premissas, restrições
+     Modo como as palavras poide ser combinadas e formar os enunciados define a sintaxe  
+
+     Sintaxe 
+     Exemplo 1:
+        Fiz a prova de FDS na semana passada
+    Se escrevêssemos:
+        FDS passada semana prova fiz 
+    Exemplo 2: 
+    (2] - / 
+
+    Semântica 
+    Define o significado formal das expressões, comandos ou unidades de programas
+    Erros de semântica estão relacionados a lógica de programação 
+    Exemplo: expressão sintaticamente correta na linguagem Python, mas semanticamnte 
+    não faz sentido somar um número e um caractere
+    a = 2 + "3" 
+
+    Algoritimo é como uma receita de bolo aonde você tem os ingredientes e depois o modo de preparp (algoritimo)
+
+    Linguagens
+    Linguagens de programação tratam os dados de um computador por meio do uso de Algoritimos
+    Programador
+        Deve encontrar um algoritmo que resolve o seu problma 
+        Implementa-lo usando uma linguagem de programação
+
+TEMA 4 – GLOSSÁRIO DO DESENVOLVEDOR DE SOFTWARE
+    Front-end: esse termo está relacionado com desenvolvimento da parte gráfica de uma aplicação web.
+
+    Back-end: está relacionado ao desenvolvimento no lado do servidor. Ou seja, a programação que acontece no lado do servidor. 
+    Geralmente, o profissional que trabalha com Back-end tem experiência em versionamento e controle, deve ter, ainda, a habilidade para gerenciar o ambiente de hospedagem, 
+    levando em consideração a acessibilidade e segurança.
+
+    Full-stack: o desenvolvedor full-stack é aquele que trabalha com ambas as abordagens tanto da parte gráfica, quanto da parte do lado do servidor.
+
+    API: a Application Programming Interface (Interface de Programação de Aplicativos) pode ser definida como um conjunto de rotinas e padrões de programação que possuem o objetivo de acessar aplicativos de software ou plataformas baseados na web. 
+    A API é uma interface utilizada por um programa ou aplicação e não por um usuário.
+
+    Framework: é um conjunto de código de uma linguagem de programação específica que auxilia no desenvolvimento de projetos de web ou de software. 
+    Podemos pensar no framework como se fosse uma biblioteca de códigos com funções já prontas. 
+    Na área de TI, também é comumente vista a definição como arcabouço de código. Exemplo de frameworks são: Vue.js, Angular, Bootstrap e React frameworks para desenvolvimento front-end. Spring boot e Laravel: framework para aplicações web back-end.
+    
+    IDE: é o acrônimo para Integrated Development Environment. O ambiente de desenvolvimento integrado é um software que integra diversas funcionalidades para desenvolvimento em uma única interface gráfica. 
+    A IDE auxilia e agiliza o processo de desenvolvimento. São exemplos de IDE: Pycharm, Eclipse, Apache Netbeans, Visual Studio.
+
+    SDK: acrônimo para Software Development Kit, em português: kit de desenvolvimento de software. Basicamente, um SDK será composto de compilador, debugger e API.
+    Um SDK pode ser entendido como conjunto de ferramentas fornecidos por um fabricante para que se desenvolva para uma plataforma ou sistema específico.
+
+    Nativo: um aplicativo nativo é aquele desenvolvido para uma única plataforma utilizando linguagens e ferramentas específicas para a plataforma em questão. 
+    Por exemplo, para desenvolvimento nativo no Android, fazemos uso de uma SDK (Android SDK) e uma IDE (Android Studio), utilizando a linguagem Java e kotlin.
+    Híbridos: dizer que uma aplicação é híbrida implica falar que sua implementação utiliza html, css e Javascript. As aplicações híbridas utilizam frameworks ou ferramentas que permitem uma mesma base de código. A aplicação híbrida é desenvolvida em uma única linguagem e distribuída para várias plataformas.
+
+    Serviços: na área de desenvolvimento podem ser entendidos como processos de software. 
+    O termo processo de software, nesse caso, não é no sentido de conjunto de atividades que temos na engenharia de software, mas em um programa processado pelo SO (Sistema Operacional).
+
+    Monolítico: é uma aplicação que roda com um único processo.
+
+    Microsserviço: é uma abordagem arquitetônica e organizacional do desenvolvimento de software na qual o software consiste em pequenos serviços independentes que se comunicam usando APIs bem definidas. 
+    Esses serviços pertencem a pequenas equipes autossuficientes. Como características dos microsserviços temos que eles são autônomos e especializados.
+
+    OAP: Service-Oriented Architecture (Or Application) Protocol (protocolo de arquitetura orientada a serviços). O SOAP utiliza arquivos xml e o protocolo HTTP como protocolo de transporte.
+
+    REST: REpresentational State Transfer, em português: Transferência Representacional de Estado, é um conjunto de restrições para criação de webservices. 
+    Quando um serviço implementa esse padrão, dizemos que é Restfull. Restfull utiliza arquivos JSON.
+
+    SOAP e REST são APIs e são arquiteturas de webservice. Webservices são independentes de linguagem.
+    Segundo Ferreira (2021), é correto afirmar que todo Webservice é uma API, mas nem toda API é um Webservice, porque tanto o Webservice quanto as APIs realizam a comunicação entre aplicações, 
+    porém a forma como são utilizados é totalmente diferente.
+    Commit: o termo commit ou “comitar” significa enviar alterações de um determinado trecho do código, ou seja, o envio da criação de uma nova versão do projeto. Geralmente, quando o desenvolvedor termina uma tarefa, ele gera um commit. Esse commit possui o código modificado e a explicação do que esse commit faz naquele código.
+
+    Versionamento: consiste em atribuir um número de versão ao estado do projeto. À medida que o desenvolvedor codifica, ele vai criando versões do projeto. 
+    Tome como exemplo várias pastas que representam versões do seu projeto: trabalho_FDS_v1, trabalho_FDS_v2.
+
+    Snapshot: cópia instantânea em um determinado tempo de um volume.
+
+    Git: é um sistema de controle de versão que gerencia as várias versões no desenvolvimento de um documento. 
+    Criado por Linus Torvalds, a justificativa para a escolha do nome é controversa, sendo que nenhuma delas foi desmentida pelo autor. GIT, em inglês britânico, é uma gíria para cabeça dura, 
+    também pode ser o acrônimo para "Global Information Tracker" ou, ainda, "Goddamn idiotic truckload of sh*t" (é um xingamento, não iremos traduzir). 
+    O logo do GIT representa a ramificação para desenvolvimento não linear.
+
+    Github: segundo a própria desenvolvedora, o Github é uma plataforma de desenvolvedor completa para criar, dimensionar e fornecer software seguro. O github utiliza o Git como sistema de controle.
+    Há uma certa confusão entre Git e GitHub para quem começa na área. Entenda Git como uma ferramenta. 
+    Tendo esta, você ainda precisará de um servidor, que, no caso, é o Github. Embora seja mais conhecido e usado, 
+    também existem outros servidores que prestam suporte para git, como: Gitlab, Bitbucket, Apache Allura. Os ícones seguintes são, respectivamente, do GitHub, Gitlab, Bitbucket e Apache Allura.
+
+    Debug: o debugging ou debugar significa depurar o programa. Ou seja, encontrar erros e tentar resolvê-los. Aqui, só lembrando que o termo bug na área de TI se refere a um erro no programa.
+
+TEMA 5 – CICLO DE VIDA DE SOFTWARE
+    Modelo de processo
+    SDLC
+
+    Atividades comun no processo de software : Especificação -> Desenvolvimento -> Validação -> Evolução  

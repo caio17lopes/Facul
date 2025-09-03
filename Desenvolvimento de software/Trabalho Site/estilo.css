@@ -1,0 +1,68 @@
+
+    body{
+            background-color: antiquewhite;
+        }
+
+        h1{text-align: center;}
+        #nome{
+            font-size:50px;
+            background-color: brown;}
+        #ola{
+            font-size: 22px;
+            font-family: cursive;
+        }
+        #biografia{
+            font-size: 22px;
+            font-family: fantasy; 
+        }
+        #texto{
+            font-size: 16px;
+            font-family: cursive;
+        }
+        #mensagem{
+            font-size: 22;
+            color: brown;
+        }
+
+        p{
+            font-size: 18px; 
+            text-align: justify;}
+        ul{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            margin-bottom:10px;
+            border: 3px solid black;
+        }
+        
+        table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;}
+
+        th, td {
+            border: 3px solid #000000;
+            padding: 10px;
+            }
+        th {background-color: brown;}
+        td {background-color: rgb(31, 31, 31);}
+
+        img {
+            width: 400px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            }
+        
+        a{
+            font-size: 18px;
+            color: aqua;
+            text-decoration: none;
+            transition: color 0.3s;}
+
+        a:hover{
+            color: brown;
+        }
+        
+        p{
+            text-align: center;
+            font-size: 22px;}
