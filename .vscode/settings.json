@@ -1,0 +1,14 @@
+{
+    "python.testing.pytestArgs": [
+        "linguagem_programacao"
+    ],
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./linguagem_programacao",
+        "-p",
+        "test*.py"
+    ]
+}
