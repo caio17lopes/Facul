@@ -1,0 +1,15 @@
+Java  
+    Surgiu nos anos 90  
+    Sun Microsystems
+    Green Project   
+    James Gosling
+
+Java e internet
+    Mesmo programa
+        Diversas paltaformas 
+        Applet
+    Casamento perfeito com navegadores 
+    Popularização da internet com Java 
+    Java não é JavaScript!!
+
+    
