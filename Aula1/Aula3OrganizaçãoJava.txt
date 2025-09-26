@@ -1,0 +1,8 @@
+Principais Soluções 
+    Java virtual machine   
+    Java Devepelopment kit 
+    Java Runtime Environment 
+
+Otimização da JVM
+    Justg in Time Compilation   
+    Garbage Collection 
