@@ -1,0 +1,33 @@
+Paradigma é a forma como vamos pensar e programar 
+    Paradigma procedural
+        Linguagem C 
+    Paradigma funcional
+        Linguagem Scala 
+    Paradigma lógico    
+        Linguagem Prolog 
+    
+Paradigma orientado a objetos 
+    Linguagem Java 
+
+Python 
+    Hibrido 
+        Procedural
+        Orientado a objetos 
+
+POO 
+    Criador Alan Kay - Trbalhava na Xerox
+    Biologo e matematico
+    Simula 67, Smalltalk
+    A ideia dele uma programção masi intuitiva  
+    Abstração com objetos   
+    Classificamos e declaramos 
+    Linguagens mistas   
+        C++, C#, PHP, Python e Java 
+
+Diferença de estruturado para POO
+    Exemplo aplicativo de vendas 
+        Exemplo estruturado 
+            função comprar()
+        Exemplo POO
+            cliente.comprar()
+                Foco no objeto cliente 
