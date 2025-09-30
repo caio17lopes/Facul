@@ -1,0 +1,4 @@
+Classe
+    Classificação os objetos 
+    Abstração para modelar o mundo 
+    Aproximação da logica da programação com a linguagem falada

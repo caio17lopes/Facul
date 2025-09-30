@@ -1,0 +1,31 @@
+Nomeclatura
+    Pacotes: são descritos inteiramente em letras minusculas 
+
+Classes: Inicia com letra maiuscula e segue o camel Classe
+
+Metodos: atributos e variaveis: incia com letra minuscula ae segue o camel case 
+
+Constantes: inteiramente com letras maiusculas separadas por underline 
+
+Metodo Static 
+    Metodo é executado sem estar associado a uma instancia 
+
+    package Aula2;
+
+    public class Carro {
+
+        String nome;
+        String modelo;
+        float velocidade;
+        static final (final não permite a alteração do valor , sempre sera esse valor ) double PI = 3.1415;
+        static float milhasParaMetros(float milhas) {
+            
+            return milhas*1600;
+        }
+        
+    }
+
+
+
+Atributo static 
+    O atributo se torna global. É acessada a mesma variavel, mesma posição de memoria, por todas as instancias 

@@ -1,0 +1,5 @@
+Cosntrutores
+    Codigo que executa no momento da instaciação 
+    Semelhante a um Metodo
+    Não te mvalor de retorno 
+    Não pode ser invocado sem ser durante a instaciação 

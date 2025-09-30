@@ -1,0 +1,5 @@
+
+UML
+    Unified Modeling Language 
+    Define os padrões para diversas etapas do desenvolvimento de softwares 
+    Muito conhecido pelo diagram de classes

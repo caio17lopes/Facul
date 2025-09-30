@@ -1,0 +1,34 @@
+Atributos 
+    Do que é composto 
+
+Metodos 
+    O que o objeto faz
+
+Estado
+    Em que situação o objeto esta
+
+    package Aula2;
+
+import java.util.Scanner;
+
+public class Aula2_1 {
+
+	public static void main(String[] args) {
+		Aluno a = new Aluno();
+		a.matricula = 1001;
+		a.nome = "Mario";
+		a.cpf = "11995266655";
+		
+		
+		Aluno b = new Aluno();
+		b.matricula = 1002;
+		b.nome = "Yoshi";
+		b.cpf = "11995266666";
+	
+		a.info();
+		System.out.println();
+		a.nome="Luigi";
+		
+		a.info();
+		System.out.println();
+		b.info();
